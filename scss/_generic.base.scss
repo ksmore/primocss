@@ -1,0 +1,14 @@
+// Generic - Shared
+
+html {
+  font-size: 100%;
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: $color-black;
+}
+
+* {
+  font-family: inherit;
+  line-height: inherit;
+  color: inherit;
+}
