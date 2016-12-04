@@ -1,3 +1,62 @@
 // Settings - Variable defaults
 
-$container-max-width: 1440px !default;
+/* <FRAMEWORK NAME> default variables. To override any variables change them in
+ * _variables.scss found in the root of the scss folder.
+ */
+
+
+
+// TESTING MODE
+
+/*
+ *  Testing mode will set visual highlights and notices on peotential markup and
+ *  accessibility issues in the browser. Set to true or false to load.
+ */
+$testing-mode:        false !default;
+
+
+
+// BORDER BOX
+
+/*
+ *  Enables box-sizing: border-box; on all elements
+ */
+$global-border-box:   true !default;
+
+
+
+// BASE
+
+/*
+ *  Base font sizes
+ */
+$base-font-size:      16px !default;
+$base-line-height:    24px !default;
+
+/*
+ *  Base font-family
+ */
+$base-font-family:    sans-serif !default;
+
+/*
+ *  Base framework color
+ */
+$base-color:          $color-gray-dark !default;
+
+
+/*
+ *  Base spacing unit
+ */
+$base-spacing-unit:   20px !default;
+
+
+
+// RESPONSIVE
+
+/*
+ *  Mobile breakpoint start points
+ */
+$breakpoint-x-small:  320px !default;
+$breakpoint-small:    420px !default;
+$breakpoint-medium:   768px !default;
+$breakpoint-large:    1024px !default;
