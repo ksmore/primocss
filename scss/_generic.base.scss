@@ -1,10 +1,9 @@
 // Generic - Shared
 
 html {
-  font-size: 100%;
-  font-family: sans-serif;
-  line-height: 1.5;
-  color: $color-black;
+  @include font-size($global-font-size);
+  font-family: $global-font-family;
+  color: $global-color;
 }
 
 * {

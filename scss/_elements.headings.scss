@@ -1,0 +1,40 @@
+@if $use-element-headings == true {
+  // HEADINGS
+
+  /*
+   *  Font sizes set for headline text. Using the font-size mixin will generate
+   *  pixel and rem valued font-sizes.
+   */
+  $font-size-h1:               36px !default;
+  $font-size-h2:               30px !default;
+  $font-size-h3:               24px !default;
+  $font-size-h4:               20px !default;
+  $font-size-h5:               16px !default;
+  $font-size-h6:               14px !default;
+
+
+
+  h1 {
+    @include font-size($font-size-h1);
+  }
+
+  h2 {
+    @include font-size($font-size-h2)
+  }
+
+  h3 {
+    @include font-size($font-size-h3)
+  }
+
+  h4 {
+    @include font-size($font-size-h4)
+  }
+
+  h5 {
+    @include font-size($font-size-h5)
+  }
+
+  h6 {
+    @include font-size($font-size-h6)
+  }
+}

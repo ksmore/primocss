@@ -1,22 +1,25 @@
 @import 'settings.colors';
 @import 'settings.defaults';
 
-@import 'tools.mixins';
 @import 'tools.clearfix';
+@import 'tools.font-size';
 
 @import 'normalize';
 @import 'generic.reset';
 @import 'generic.base';
 @import 'generic.box-sizing';
 
-/*@import 'elements.headings';
+@import 'elements.headings';
+
+/*
 @import 'elements.hr';
 @import 'elements.forms';
 @import 'elements.links';
 @import 'elements.lists';
 @import 'elements.paragraphs';
 @import 'elements.quotes';
-@import 'elements.tables';*/
+@import 'elements.tables';
+*/
 
 @import 'layout.base';
 @import 'layout.containers';

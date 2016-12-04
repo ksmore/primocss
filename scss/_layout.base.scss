@@ -1,20 +1,22 @@
-// Layout - Base
+@if use-layout-base == true {
+  // Layout - Base
 
-* {
-  margin: 0;
+  * {
+    margin: 0;
 
-  + * {
-    margin: 1.5em 0 0;
+    + * {
+      margin: 1.5em 0 0;
+    }
   }
-}
 
-body,
-br,
-li,
-dt,
-dd,
-th,
-td,
-option {
-  margin: 0;
-}
+  body,
+  br,
+  li,
+  dt,
+  dd,
+  th,
+  td,
+  option {
+    margin: 0;
+  }
+} // endif

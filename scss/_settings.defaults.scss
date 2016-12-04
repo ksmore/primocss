@@ -69,21 +69,6 @@ $breakpoint-large:           1024px !default;
 
 
 
-// FONT SIZES
-
-/*
- *  Font sizes set for headline text, parapgraps or utility classes. All
- *  variables will refer to their usage.
- */
-$text-h1-size:               36px !default;
-$text-h2-size:               30px !default;
-$text-h3-size:               24px !default;
-$text-h4-size:               20px !default;
-$text-h5-size:               16px !default;
-$text-h6-size:               14px !default;
-
-
-
 // ELEMENTS, OBJECTS, COMPONENTS & Utilities
 
 /*
@@ -91,3 +76,18 @@ $text-h6-size:               14px !default;
  *  disabled within the framework. To enable what is required set 'true' or
  *  'false' to load.
  */
+$use-element-forms:          true !default;
+$use-element-headings:       true !default;
+$use-element-hr:             true !default;
+$use-element-links:          true !default;
+$use-element-lists:          true !default;
+$use-element-media:          true !default;
+$use-element-page:           true !default;
+$use-element-quote:          true !default;
+$use-element-table:          true !default;
+
+
+
+$use-layout-base:            true !default;
+$use-layout-containers:      true !default;
+$use-layout-grids:           true !default;
