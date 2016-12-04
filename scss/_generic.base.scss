@@ -1,13 +1,32 @@
-// Generic - Shared
+// BASE
+
+/*
+ *  Simple base page setup for <FRAMEWORK NAME>.
+ *
+ *  1. Sets the default font-family, font-size, line-height and color for the
+ *     whole framework and set with the default global variables.
+ *
+ *  2. Ensures the whole html element fills the entire height of the viewport.
+ *
+ *  3. Sets scrollbars to always be visible and prevents horizontal content
+ *     jumps between pages with smaller amounts of content.
+ *
+ *  4. Makes sure all elements across the project inherits the font-family,
+ *     line-height and color. This should keep a level of consistancy for the
+ *     entire framework.
+ */
 
 html {
-  @include font-size($global-font-size);
-  font-family: $global-font-family;
-  color: $global-color;
+  font-size: ($global-font-size / 16px) * 1em; /* [1] */
+  font-family: $global-font-family; /* [1] */
+  color: $global-color; /* [1] */
+  line-height: $global-line-height / $global-font-size; /* [1] */
+  min-height: 100%; /* [2] */
+  overflow-y: scroll; /* [3] */
 }
 
 * {
-  font-family: inherit;
-  line-height: inherit;
-  color: inherit;
+  font-family: inherit; /* [4] */
+  line-height: inherit; /* [4] */
+  color: inherit; /* [4] */
 }
