@@ -1,6 +1,10 @@
 @if $global-border-box == true {
-// BOX SIZING
+  // BOX SIZING
 
+  /*
+   *  All elements set as 'border-box'. Overwrite this on a
+   *  class by class or element basis.
+   */
   html {
     box-sizing: border-box;
   }

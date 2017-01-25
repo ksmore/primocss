@@ -1,12 +1,15 @@
 @if $use-layout-containers == true {
   // Layout - Containers
-  $container-max-width: 1440px !default;
+  $grid-max-width: 1440px !default;
+  $grid-gutter:    round($global-spacing-unit) !default;
+  $grid-margin:    round($global-spacing-unit) !default;
+
 
   .container {
     @include clearfix();
     margin-right: auto;
     margin-left: auto;
-    max-width: $container-max-width;
+    max-width: $grid-max-width;
     width: 100%;
 
     &--full {
