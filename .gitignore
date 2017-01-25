@@ -23,5 +23,5 @@ Temporary Items
 .apdisk
 
 ### Sass ###
-.sass-cache/
+*.sass-cache/
 *.css.map
