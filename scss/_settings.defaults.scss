@@ -42,12 +42,12 @@ $global-color:                $color-gray-dark !default;
 /*
  *  Global spacing unit.
  */
-$global-spacing-unit:         round($global-line-height) !default;
+$global-spacing-unit:      round($global-line-height) !default;
 
-$global-spacing-unit-tiny:    calc($global-spacing-unit / 4) !default;
-$global-spacing-unit-small:   calc($global-spacing-unit / 2) !default;
-$global-spacing-unit-large:   calc($global-spacing-unit * 2) !default;
-$global-spacing-unit-xlarge:  calc($global-spacing-unit * 4) !default;
+$global-spacing-unit-tiny:   $global-spacing-unit / 4 !default;
+$global-spacing-unit-small:  $global-spacing-unit / 2 !default;
+$global-spacing-unit-large:  $global-spacing-unit * 2 !default;
+$global-spacing-unit-xlarge: $global-spacing-unit * 4 !default;
 
 /*
  *  Global standard UI variables

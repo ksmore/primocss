@@ -5,10 +5,14 @@
     margin: 0;
 
     + * {
-      margin-top: 20px;
+      margin-top: $global-spacing-unit;
     }
   }
 
+  /*
+   * Following elements do not require any margin at all, this should override
+   * the global vertical rythm.
+   */
   body,
   br,
   li,
