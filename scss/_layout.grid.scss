@@ -1,16 +1,17 @@
 @if $use-layout-grids == true {
   // Layout - Flex grid
+  $grid-spacing-unit:    round($global-spacing-unit) !default;
 
   .grid {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -0.5rem;
-    margin-left: -0.5rem;
+    margin-right: -#{$grid-spacing-unit};
+    margin-left: -#{$grid-spacing-unit};
 
     > * {
       flex: 1 0 10rem;
-      margin-right: 0.5rem;
-      margin-left: 0.5rem;
+      margin-right: $grid-spacing-unit;
+      margin-left: $grid-spacing-unit;
       margin-top: 0;
 
       @media screen and (max-width: $breakpoint-medium) {

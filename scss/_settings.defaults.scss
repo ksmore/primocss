@@ -1,6 +1,6 @@
 // SETTINGS - VARIABLE DEFAULTS
 
-/* <FRAMEWORK NAME> default variables. To override any variables change them in
+/* Ground Work default variables. To override any variables change them in
  * _variables.scss found in the root of the scss folder.
  */
 
@@ -42,12 +42,12 @@ $global-color:                $color-gray-dark !default;
 /*
  *  Global spacing unit.
  */
-$global-spacing-unit:      round($global-line-height) !default;
+$global-spacing-unit:         round($global-line-height) !default;
 
-$global-spacing-unit-tiny:   $global-spacing-unit / 4 !default;
-$global-spacing-unit-small:  $global-spacing-unit / 2 !default;
-$global-spacing-unit-large:  $global-spacing-unit * 2 !default;
-$global-spacing-unit-xlarge: $global-spacing-unit * 4 !default;
+$global-spacing-unit-tiny:    $global-spacing-unit / 4 !default;
+$global-spacing-unit-small:   $global-spacing-unit / 2 !default;
+$global-spacing-unit-large:   $global-spacing-unit * 2 !default;
+$global-spacing-unit-xlarge:  $global-spacing-unit * 4 !default;
 
 /*
  *  Global standard UI variables
@@ -55,6 +55,10 @@ $global-spacing-unit-xlarge: $global-spacing-unit * 4 !default;
 $global-border-radius:        3px !default;
 $global-transition:           all 400ms ease-in-out !default;
 
+/*
+ *  Global site width.
+ */
+$global-max-width:            1440px !default;
 
 
 // RESPONSIVE

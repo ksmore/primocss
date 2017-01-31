@@ -1,18 +1,18 @@
 @if $use-layout-containers == true {
   // Layout - Containers
-  $grid-max-width: 1440px !default;
-  $grid-gutter:    round($global-spacing-unit) !default;
-  $grid-margin:    round($global-spacing-unit) !default;
 
-
+  /*
+   * Sets the container widths, can be overwritten with the BEM class
+   * .container--fluid for a full width layout.
+   */
   .container {
     @include clearfix();
     margin-right: auto;
     margin-left: auto;
-    max-width: $grid-max-width;
+    max-width: $global-max-width;
     width: 100%;
 
-    &--full {
+    &--fluid {
       max-width: 100%;
     }
   }
