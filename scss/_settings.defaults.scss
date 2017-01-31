@@ -12,6 +12,7 @@
  *  Testing mode will set visual highlights and notices on peotential markup and
  *  accessibility issues in the browser. Set to true or false to load.
  */
+
 $testing-mode:               false !default;
 
 
@@ -21,27 +22,32 @@ $testing-mode:               false !default;
 /*
  *  Enables box-sizing: border-box; on all elements.
  */
+
 $global-border-box:           true !default;
 
 /*
  *  Global font sizes.
  */
+
 $global-font-size:            16px !default;
 $global-line-height:          24px !default;
 
 /*
  *  Global font-family
  */
+
 $global-font-family:          sans-serif !default;
 
 /*
  *  Global framework color.
  */
+
 $global-color:                $color-gray-dark !default;
 
 /*
  *  Global spacing unit.
  */
+
 $global-spacing-unit:         round($global-line-height) !default;
 
 $global-spacing-unit-tiny:    $global-spacing-unit / 4 !default;
@@ -52,12 +58,14 @@ $global-spacing-unit-xlarge:  $global-spacing-unit * 4 !default;
 /*
  *  Global standard UI variables
  */
+
 $global-border-radius:        3px !default;
 $global-transition:           all 400ms ease-in-out !default;
 
 /*
  *  Global site width.
  */
+
 $global-max-width:            1440px !default;
 
 
@@ -66,15 +74,20 @@ $global-max-width:            1440px !default;
 /*
  *  Enable or disable responsive styles.
  */
+
 $global-responsive:           true !default;
 
 /*
  *  Mobile breakpoint start points.
  */
-$breakpoint-x-small:          320px !default;
-$breakpoint-small:            420px !default;
-$breakpoint-medium:           768px !default;
-$breakpoint-large:            1024px !default;
+$global-breakpoints: (
+  xs:                         0,
+  sm:                         420px,
+  md:                         768px,
+  lg:                         1024px,
+  xl:                         1280px
+) !default;
+
 
 
 
@@ -85,6 +98,7 @@ $breakpoint-large:            1024px !default;
  *  disabled within the framework. To enable what is required set 'true' or
  *  'false' to load.
  */
+
 $use-element-forms:           true !default;
 $use-element-headings:        true !default;
 $use-element-hr:              true !default;

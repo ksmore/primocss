@@ -12,6 +12,7 @@
      * Sets spacing between a label and any element following to a smaller
      * spacing value than the global spacing unit.
      */
+
     + * {
       margin-top: $global-spacing-unit-tiny;
     }

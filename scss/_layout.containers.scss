@@ -2,9 +2,12 @@
   // Layout - Containers
 
   /*
-   * Sets the container widths, can be overwritten with the BEM class
-   * .container--fluid for a full width layout.
+   * Sets the container widths.
+   *
+   * 1. Can be overwritten with the BEM class .container--fluid for a full
+   *    width layout.
    */
+
   .container {
     @include clearfix();
     margin-right: auto;
@@ -12,7 +15,7 @@
     max-width: $global-max-width;
     width: 100%;
 
-    &--fluid {
+    &--fluid /* [1] */ {
       max-width: 100%;
     }
   }
@@ -20,6 +23,7 @@
   /*
    * Rows
    */
+   
   .row {
     border-bottom: 1px dotted $color-gray-lighter;
     display: flex;

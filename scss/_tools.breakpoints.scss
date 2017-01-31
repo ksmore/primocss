@@ -1,0 +1,45 @@
+// Tools - Breakpoints
+
+/*
+ * Breakpoint mixins and functions to create powerful responsive sites and apps.
+ *
+ * 1. Min / max breakpoint mixin, can be used to loop through all
+ *    $grid-breakpoints or set individually. Use breakpoint names; xs, sm, md,
+ *    lg and xl to set the breakpoint value e.g @include set-breakpoint-min(sm).
+ *
+ * 2. Returns a blank string if its the smallest of breakpoints, used to create
+ *    breakpoint related ultility classes.
+ */
+@mixin set-breakpoint-min($breakpoint) { /* [1] */
+  @if map-has-key($grid-breakpoints, $breakpoint) {
+    @media (min-width: #{map-get($grid-breakpoints, $breakpoint)}) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
+
+@mixin set-breakpoint-max($breakpoint) { /* [1] */
+  @if map-has-key($grid-breakpoints, $breakpoint) {
+    @media (max-width: #{map-get($grid-breakpoints, $breakpoint)}) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
+
+@function breakpoint-min-prefix($name, $breakpoints: $grid-breakpoints) { /* [2] */
+  @return if(breakpoint-min($name, $breakpoints) == null, "", "-#{$name}");
+}
+
+@function breakpoint-max-prefix($name, $breakpoints: $grid-breakpoints) { /* [2] */
+  @return if(breakpoint-max($name, $breakpoints) == null, "", "-#{$name}");
+}
