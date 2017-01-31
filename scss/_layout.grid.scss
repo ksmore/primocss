@@ -5,6 +5,8 @@
    * Sets the grid spacing value used for gutters
    */
   $grid-spacing-unit:    round($global-spacing-unit) !default;
+  $grid-max-columns:     12 !default;
+  $grid-column-value:    100% / $grid-max-columns;
 
   /*
    * Flex grid based on the work by Heydon Pickering https://github.com/Heydon/fukol-grids.
@@ -40,6 +42,21 @@
             margin-top: $grid-spacing-unit; /* [1] */
           }
         }
+
+        @each $breakpoint in map-keys($global-breakpoints) {
+          @include set-breakpoint-min($breakpoint) {
+            $prefix: breakpoint-min-prefix($breakpoint, $global-breakpoints);
+
+            @for $grid-col from 1 through $grid-max-columns {
+              .grid-#{$prefix}-col-#{$grid-col} {
+                flex-basis: $grid-column-value * $grid-col;
+                max-width: $grid-column-value * $grid-col;
+              }
+            }
+          }
+        }
+
+
       } // endif
     }
   }
