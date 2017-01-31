@@ -20,6 +20,10 @@
       max-width: 100%;
     }
 
+    /*
+     * Sets a smaller container gutter when responsive is enabled
+     */
+     
     @if $global-responsive == true {
       @include set-breakpoint-max(md) {
         padding: 0 $global-spacing-unit-small;

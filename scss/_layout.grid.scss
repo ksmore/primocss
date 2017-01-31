@@ -1,7 +1,16 @@
 @if $use-layout-grids == true {
   // Layout - Flex grid
 
+  /*
+   * Sets the grid spacing value used for gutters
+   */
   $grid-spacing-unit:    round($global-spacing-unit) !default;
+
+  /*
+   * Flex grid based on the work by Heydon Pickering https://github.com/Heydon/fukol-grids.
+   * Can be used indipendantly or inconjunction with the column grid classes for
+   * explict widths.
+   */
 
   .grid-row {
     display: flex;
@@ -15,13 +24,20 @@
       margin-left: $grid-spacing-unit;
       margin-top: 0;
 
+      /*
+       * Sets a blanket 100% width on all grid items when at the md 768px
+       * breakpoint.
+       *
+       * 1. Sets the Lobotomized owl selector to work on mobile
+       */
+
       @if $global-responsive == true {
         @include set-breakpoint-max(md) {
           flex-basis: 100%;
           max-width: 100%;
 
           + * {
-            margin-top: $grid-spacing-unit;
+            margin-top: $grid-spacing-unit; /* [1] */
           }
         }
       } // endif
