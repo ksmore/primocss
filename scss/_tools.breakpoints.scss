@@ -3,16 +3,14 @@
 /*
  * Breakpoint mixins and functions to create powerful responsive sites and apps.
  *
- * 1. Min / max breakpoint mixin, can be used to loop through all
- *    $grid-breakpoints or set individually. Use breakpoint names; xs, sm, md,
- *    lg and xl to set the breakpoint value e.g @include set-breakpoint-min(sm).
- *
- * 2. Returns a blank string if its the smallest of breakpoints, used to create
- *    breakpoint related ultility classes.
+ * Min / max breakpoint mixin, can be used to loop through all
+ * $global-breakpoints or set individually. Use breakpoint names; xs, sm, md,
+ * lg and xl to set the breakpoint value e.g @include set-breakpoint-min(sm).
  */
-@mixin set-breakpoint-min($breakpoint) { /* [1] */
-  @if map-has-key($grid-breakpoints, $breakpoint) {
-    @media (min-width: #{map-get($grid-breakpoints, $breakpoint)}) {
+
+@mixin set-breakpoint-min($breakpoint) {
+  @if map-has-key($global-breakpoints, $breakpoint) {
+    @media (min-width: #{map-get($global-breakpoints, $breakpoint)}) {
       @content;
     }
   }
@@ -23,9 +21,9 @@
   }
 }
 
-@mixin set-breakpoint-max($breakpoint) { /* [1] */
-  @if map-has-key($grid-breakpoints, $breakpoint) {
-    @media (max-width: #{map-get($grid-breakpoints, $breakpoint)}) {
+@mixin set-breakpoint-max($breakpoint) {
+  @if map-has-key($global-breakpoints, $breakpoint) {
+    @media (max-width: #{map-get($global-breakpoints, $breakpoint)}) {
       @content;
     }
   }
@@ -36,10 +34,15 @@
   }
 }
 
-@function breakpoint-min-prefix($name, $breakpoints: $grid-breakpoints) { /* [2] */
+/*
+ * Returns a blank string if its the smallest of breakpoints, used to create
+ * breakpoint related ultility classes.
+ */
+
+@function breakpoint-min-prefix($name, $breakpoints: $global-breakpoints) {
   @return if(breakpoint-min($name, $breakpoints) == null, "", "-#{$name}");
 }
 
-@function breakpoint-max-prefix($name, $breakpoints: $grid-breakpoints) { /* [2] */
+@function breakpoint-max-prefix($name, $breakpoints: $global-breakpoints) {
   @return if(breakpoint-max($name, $breakpoints) == null, "", "-#{$name}");
 }
