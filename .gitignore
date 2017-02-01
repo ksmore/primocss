@@ -30,3 +30,9 @@ Temporary Items
 ### Assets ###
 assets/
 assets/*
+build/
+build/*
+
+### NPM ###
+node_modules/
+node_modules/*

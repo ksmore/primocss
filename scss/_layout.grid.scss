@@ -48,15 +48,13 @@
             $prefix: breakpoint-min-prefix($breakpoint, $global-breakpoints);
 
             @for $grid-col from 1 through $grid-max-columns {
-              .grid-#{$prefix}-col-#{$grid-col} {
+              &.grid-#{$prefix}-col-#{$grid-col} {
                 flex-basis: $grid-column-value * $grid-col;
                 max-width: $grid-column-value * $grid-col;
               }
             }
           }
         }
-
-
       } // endif
     }
   }
