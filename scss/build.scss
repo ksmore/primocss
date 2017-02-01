@@ -1,3 +1,5 @@
+@import 'normalize';
+
 @import 'settings.colors';
 @import 'settings.defaults';
 
@@ -5,7 +7,6 @@
 @import 'tools.breakpoints';
 @import 'tools.font-size';
 
-@import 'normalize';
 @import 'generic.reset';
 @import 'generic.base';
 @import 'generic.box-sizing';
@@ -13,14 +14,14 @@
 @import 'elements.forms';
 @import 'elements.headings';
 
-/*
-@import 'elements.hr';
-@import 'elements.links';
-@import 'elements.lists';
-@import 'elements.paragraphs';
-@import 'elements.quotes';
-@import 'elements.tables';
-*/
+
+// @import 'elements.hr';
+// @import 'elements.links';
+// @import 'elements.lists';
+// @import 'elements.paragraphs';
+// @import 'elements.quotes';
+// @import 'elements.tables';
+
 
 @import 'layout.containers';
 @import 'layout.grid';

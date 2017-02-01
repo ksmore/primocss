@@ -1,11 +1,1 @@
-// Normalize makes browsers render all elements more consistently and in line
-// with modern standards. It precisely targets only the styles that need
-// normalizing.
-
-// Source: https://github.com/JohnAlbin/normalize-scss
-
-@import 'normalize/variables';
-@import 'normalize/vertical-rhythm';
-@import 'normalize/normalize-mixin';
-
-@include normalize();
+@import '../node_modules/normalize-scss/sass/normalize/import-now';

@@ -1,11 +1,11 @@
 @if $use-element-headings == true {
-  // HEADINGS
+  // ELEMENTS - Headings
 
-  /*
-   *  Font sizes set for headline text. Using the font-size mixin will generate
-   *  pixel and rem valued font-sizes.
-   */
-   
+  //
+  //  Font sizes set for headline text. Using the font-size mixin will generate
+  //  pixel and rem valued font-sizes.
+  //
+
   $font-size-h1:               36px !default;
   $font-size-h2:               30px !default;
   $font-size-h3:               24px !default;
@@ -17,6 +17,17 @@
 
   h1 {
     @include font-size($font-size-h1);
+
+    //
+    // Specifing lobotomized owl selector to override normalize margin styles.
+    // This keep's the <h1> element inline with all other elements / classes.
+    //
+
+    margin: 0;
+
+    + * {
+      margin-top: $global-spacing-unit;
+    }
   }
 
   h2 {

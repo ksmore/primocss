@@ -1,5 +1,5 @@
 @if $use-element-forms == true {
-  // FORMS
+  // ELEMENTS - Forms
 
   form {
 
@@ -8,10 +8,9 @@
   label {
     width: 100%;
 
-    /*
-     * Sets spacing between a label and any element following to a smaller
-     * spacing value than the global spacing unit.
-     */
+    //
+    // Specifing lobotomized owl selector to define a small specing value
+    //
 
     + * {
       margin-top: $global-spacing-unit-tiny;

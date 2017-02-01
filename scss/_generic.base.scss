@@ -1,20 +1,20 @@
-// BASE
+// GENERIC - Base
 
-/*
- *  Simple base page setup for Ground Work.
- *
- *  1. Sets the default font-family, font-size, line-height and color for the
- *     whole framework and set with the default global variables.
- *
- *  2. Ensures the whole html element fills the entire height of the viewport.
- *
- *  3. Sets scrollbars to always be visible and prevents horizontal content
- *     jumps between pages with smaller amounts of content.
- *
- *  4. Makes sure all elements across the project inherits the font-family,
- *     line-height and color. This should keep a level of consistancy for the
- *     entire framework.
- */
+//
+//  Simple base page setup for Ground Work.
+//
+//  1. Sets the default font-family, font-size, line-height and color for the
+//     whole framework and set with the default global variables.
+//
+//  2. Ensures the whole html element fills the entire height of the viewport.
+//
+//  3. Sets scrollbars to always be visible and prevents horizontal content
+//     jumps between pages with smaller amounts of content.
+//
+//  4. Makes sure all elements across the project inherits the font-family,
+//     line-height and color. This should keep a level of consistancy for the
+//     entire framework.
+//
 
 html {
   font-size: ($global-font-size / 16px) * 1em; /* [1] */

@@ -1,18 +1,19 @@
 // SETTINGS - COLOR DEFAULTS
 
-/* Ground Work default colour variables. To override any variables change them
- * in _variables.scss found in the root of the scss folder. All varilables here
- * should set the visual tone of the framework.
- */
+//
+// Ground Work default colour variables. To override any variables change them
+// in _variables.scss found in the root of the scss folder. All varilables here
+// should set the visual tone of the framework.
+//
 
 $color-black:                  #000 !default;
 $color-white:                  #FFF !default;
 
 
 
-/*
- * Grey-scale variables
- */
+//
+// Grey-scale variables
+//
 
 $color-grey-darkest:           #111 !default;
 $color-grey-darker:            #333 !default;
@@ -24,10 +25,10 @@ $color-grey-lightest:          #f7f7f7 !default;
 
 
 
-/*
- * Primary color variables
- */
- 
+//
+// Primary color variables
+//
+
 $color-amaranth-red:           #e83a46 !default;
 $color-pomegranate-orange:     #f6511d !default;
 $color-gold-yellow:            #ffb400 !default;

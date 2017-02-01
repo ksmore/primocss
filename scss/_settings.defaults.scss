@@ -1,17 +1,17 @@
 // SETTINGS - VARIABLE DEFAULTS
 
-/* Ground Work default variables. To override any variables change them in
- * _variables.scss found in the root of the scss folder.
- */
+// Ground Work default variables. To override any variables change them in
+// _variables.scss found in the root of the scss folder.
+//
 
 
 
 // TESTING MODE
 
-/*
- *  Testing mode will set visual highlights and notices on peotential markup and
- *  accessibility issues in the browser. Set to true or false to load.
- */
+//
+//  Testing mode will set visual highlights and notices on peotential markup and
+//  accessibility issues in the browser. Set to true or false to load.
+//
 
 $testing-mode:               false !default;
 
@@ -19,34 +19,34 @@ $testing-mode:               false !default;
 
 // GLOBAL
 
-/*
- *  Enables box-sizing: border-box; on all elements.
- */
+//
+//  Enables box-sizing: border-box; on all elements.
+//
 
 $global-border-box:           true !default;
 
-/*
- *  Global font sizes.
- */
+//
+//  Global font sizes.
+//
 
 $global-font-size:            16px !default;
 $global-line-height:          24px !default;
 
-/*
- *  Global font-family
- */
+//
+//  Global font-family
+//
 
 $global-font-family:          sans-serif !default;
 
-/*
- *  Global framework color.
- */
+//
+//  Global framework color.
+//
 
 $global-color:                $color-grey-dark !default;
 
-/*
- *  Global spacing unit.
- */
+//
+//  Global spacing unit.
+//
 
 $global-spacing-unit:         round($global-line-height) !default;
 
@@ -55,31 +55,31 @@ $global-spacing-unit-small:   $global-spacing-unit / 2 !default;
 $global-spacing-unit-large:   $global-spacing-unit * 2 !default;
 $global-spacing-unit-xlarge:  $global-spacing-unit * 4 !default;
 
-/*
- *  Global standard UI variables
- */
+//
+//  Global standard UI variables
+//
 
 $global-border-radius:        3px !default;
 $global-transition:           all 400ms ease-in-out !default;
 
-/*
- *  Global site width.
- */
+//
+//  Global site width.
+//
 
 $global-max-width:            1440px !default;
 
 
 // RESPONSIVE
 
-/*
- *  Enable or disable responsive styles.
- */
+//
+//  Enable or disable responsive styles.
+//
 
 $global-responsive:           true !default;
 
-/*
- *  Mobile breakpoint start points.
- */
+//
+//  Mobile breakpoint start points.
+//
 
 $global-breakpoints: (
   xs:                         0,
@@ -94,11 +94,11 @@ $global-breakpoints: (
 
 // ELEMENTS, OBJECTS, COMPONENTS & Utilities
 
-/*
- *  List of all element, objects, components and utility styles enabled /
- *  disabled within the framework. To enable what is required set 'true' or
- *  'false' to load.
- */
+//
+//  List of all element, objects, components and utility styles enabled /
+//  disabled within the framework. To enable what is required set 'true' or
+//  'false' to load.
+//
 
 $use-element-forms:           true !default;
 $use-element-headings:        true !default;

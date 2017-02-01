@@ -1,18 +1,18 @@
 @if $use-layout-grids == true {
-  // Layout - Flex grid
+  /// LAYOUT - Flex grid
 
-  /*
-   * Sets the grid spacing value used for gutters
-   */
+  //
+  // Sets the grid spacing value used for gutters
+  //
   $grid-spacing-unit:    round($global-spacing-unit) !default;
   $grid-max-columns:     12 !default;
   $grid-column-value:    100% / $grid-max-columns;
 
-  /*
-   * Flex grid based on the work by Heydon Pickering https://github.com/Heydon/fukol-grids.
-   * Can be used indipendantly or inconjunction with the column grid classes for
-   * explict widths.
-   */
+  //
+  // Flex grid based on the work by Heydon Pickering https://github.com/Heydon/fukol-grids.
+  // Can be used indipendantly or inconjunction with the column grid classes for
+  // explict widths.
+  //
 
   .grid-row {
     display: flex;
@@ -26,12 +26,12 @@
       margin-left: $grid-spacing-unit;
       margin-top: 0;
 
-      /*
-       * Sets a blanket 100% width on all grid items when at the md 768px
-       * breakpoint.
-       *
-       * 1. Sets the Lobotomized owl selector to work on mobile
-       */
+      //
+      // Sets a blanket 100% width on all grid items when at the md 768px
+      // breakpoint.
+      //
+      // 1. Sets the Lobotomized owl selector to work on mobile
+      //
 
       @if $global-responsive == true {
         @include set-breakpoint-max(md) {
@@ -48,9 +48,10 @@
             $prefix: breakpoint-min-prefix($breakpoint, $global-breakpoints);
 
             @for $grid-col from 1 through $grid-max-columns {
-              &.grid-#{$prefix}-col-#{$grid-col} {
-                flex-basis: $grid-column-value * $grid-col;
-                max-width: $grid-column-value * $grid-col;
+              $grid-width: $grid-column-value * $grid-col;
+              &.grid#{$prefix}-col-#{$grid-col} {
+                flex-basis: calc(#{$grid-width} - #{$grid-spacing-unit} * 2);
+                max-width: calc(#{$grid-width} - #{$grid-spacing-unit} * 2);
               }
             }
           }

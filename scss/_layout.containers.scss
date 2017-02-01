@@ -1,12 +1,12 @@
 @if $use-layout-containers == true {
-  // Layout - Containers
+  // LAYOUT - Containers
 
-  /*
-   * Sets the container widths.
-   *
-   * 1. Can be overwritten with the BEM class .container--fluid for a full
-   *    width layout.
-   */
+  //
+  // Sets the container widths.
+  //
+  // 1. Can be overwritten with the BEM class .container--fluid for a full
+  //    width layout.
+  //
 
   .container {
     @include clearfix();
@@ -20,10 +20,10 @@
       max-width: 100%;
     }
 
-    /*
-     * Sets a smaller container gutter when responsive is enabled
-     */
-     
+    //
+    // Sets a smaller container gutter when responsive is enabled
+    //
+
     @if $global-responsive == true {
       @include set-breakpoint-max(md) {
         padding: 0 $global-spacing-unit-small;

@@ -1,8 +1,8 @@
-// RESET
+// GENERIC - Reset
 
-/*
- *  A simple reset that works on top of Normalize.css.
- */
+//
+//  A simple reset that works on top of Normalize.css.
+//
 
 body,
 h1,
@@ -26,9 +26,9 @@ legend {
 }
 
 
- /*
-  *  Remove trailing margins from nested lists.
-  */
+//
+//  Remove trailing margins from nested lists.
+//
 
 li > {
 
@@ -40,9 +40,9 @@ li > {
 }
 
 
- /*
-  *  Remove default table spacing.
-  */
+//
+//  Remove default table spacing.
+//
 
 table {
    border-collapse: collapse;
@@ -50,10 +50,10 @@ table {
 }
 
 
- /*
-  * 1. Reset Chrome and Firefox behaviour which sets a `min-width: min-content;`
-  *    on fieldsets.
-  */
+//
+// 1. Reset Chrome and Firefox behaviour which sets a `min-width: min-content;`
+//    on fieldsets.
+//
 
 fieldset {
   min-width: 0; /* [1] */
