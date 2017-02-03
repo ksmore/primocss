@@ -36,19 +36,19 @@ $global-line-height:          24px !default;
 //  Global font-family
 //
 
-$global-font-family:          sans-serif !default;
+$global-font-family:          Arial, "Helvetica Neue", Helvetica, sans-serif !default;
 
 //
 //  Global framework color.
 //
 
-$global-color:                $color-grey-dark !default;
+$global-color:                $color-grey-darker !default;
 
 //
 //  Global spacing unit.
 //
 
-$global-spacing-unit:         round($global-line-height) !default;
+$global-spacing-unit:         ($global-font-size / 16px) * 1rem !default;
 
 $global-spacing-unit-tiny:    $global-spacing-unit / 4 !default;
 $global-spacing-unit-small:   $global-spacing-unit / 2 !default;
