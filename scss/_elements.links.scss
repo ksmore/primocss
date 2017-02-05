@@ -1,0 +1,23 @@
+@if $use-element-links == true {
+  // ELEMENTS - Links
+
+  a {
+
+    &:link {
+      color: inherit;
+      text-decoration: underline;
+    }
+
+    &:visited {
+      color: $color-link-visited;
+    }
+
+    &:hover {
+      color: $color-link-hover;
+    }
+
+    &:active {
+      color: $color-link-active;
+    }
+  }
+}

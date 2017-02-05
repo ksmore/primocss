@@ -35,3 +35,13 @@ $color-yellow:                 #ffb400 !default;
 $color-blue:                   #00a6ed !default;
 $color-green:                  #7fb800 !default;
 $color-navy:                   #0d2c54 !default;
+
+
+
+//
+// Hyperlink colors
+//
+
+$color-link-visited:           $color-navy !default;
+$color-link-hover:             lighten($color-navy, 20%) !default;
+$color-link-active:            lighten($color-navy, 30%) !default;
