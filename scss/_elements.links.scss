@@ -1,6 +1,16 @@
 @if $use-element-links == true {
   // ELEMENTS - Links
 
+  //
+  // Hyperlink colors
+  //
+
+  $color-link-visited:           $color-navy !default;
+  $color-link-hover:             lighten($color-navy, 20%) !default;
+  $color-link-active:            lighten($color-navy, 30%) !default;
+
+
+
   a {
 
     //

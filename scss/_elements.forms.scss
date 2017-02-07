@@ -1,6 +1,20 @@
 @if $use-element-forms == true {
   // ELEMENTS - Forms
 
+  //
+  // Form colours
+  //
+
+  $color-fieldset-bg:           $color-grey-lighter !default;
+
+
+
+  fieldset {
+    background-color: $color-fieldset-bg;
+    border-radius: $global-border-radius;
+    padding: $global-spacing-unit;
+  }
+
   label {
     @include clearfix();
 
