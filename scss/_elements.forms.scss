@@ -2,10 +2,10 @@
   // ELEMENTS - Forms
 
   label {
-    width: 100%;
+    @include clearfix();
 
     //
-    // Specifing lobotomized owl selector to define a small specing value
+    // Specifing lobotomized owl selector to define a small specing value.
     //
 
     + * {

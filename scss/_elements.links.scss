@@ -3,8 +3,12 @@
 
   a {
 
+    //
+    // 1. Base link style inherits the color of parent and isn't set.
+    //
+
     &:link {
-      color: inherit;
+      color: inherit; /* [1] */
       text-decoration: underline;
     }
 

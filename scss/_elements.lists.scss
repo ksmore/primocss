@@ -2,7 +2,7 @@
   // ELEMENTS - Lists
 
   //
-  // Ordered and un-ordered lists
+  // Ordered and un-ordered lists.
   //
 
   ol,
@@ -13,6 +13,7 @@
 
       //
       // 1. Sets spacing between all list items and nested lists with in a <li>
+      //    This should overwrite the lobotomized owl method.
       //
 
       + li {
@@ -27,7 +28,7 @@
   }
 
   //
-  // Flexible multiline definition lists with 2 lines of CSS
+  // Flexible multiline definition lists with 2 lines of CSS.
   //
 
   dl {
