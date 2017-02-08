@@ -17,12 +17,12 @@
       //
 
       + li {
-        margin-top: $global-spacing-unit-small; /* [1] */
+        margin-top: $global-spacing-unit-xs; /* [1] */
       }
 
       > ul,
         ol {
-        margin-top: $global-spacing-unit-small; /* [1] */
+        margin-top: $global-spacing-unit-xs; /* [1] */
       }
     }
   }

@@ -26,7 +26,7 @@
 
     @if $global-responsive == true {
       @include set-breakpoint-max(md) {
-        padding: 0 $global-spacing-unit-small;
+        padding: 0 $global-spacing-unit-xs;
       }
     } // endif
   }

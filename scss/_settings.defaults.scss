@@ -56,10 +56,10 @@ $global-color:                $color-grey-darker !default;
 
 $global-spacing-unit:         ($global-font-size / 16px) * 1rem !default;
 
-$global-spacing-unit-tiny:    $global-spacing-unit / 4 !default;
-$global-spacing-unit-small:   $global-spacing-unit / 2 !default;
-$global-spacing-unit-large:   $global-spacing-unit * 2 !default;
-$global-spacing-unit-xlarge:  $global-spacing-unit * 4 !default;
+$global-spacing-unit-xs:      $global-spacing-unit / 4 !default;
+$global-spacing-unit-sm:      $global-spacing-unit / 2 !default;
+$global-spacing-unit-lg:      $global-spacing-unit * 2 !default;
+$global-spacing-unit-xl:      $global-spacing-unit * 4 !default;
 
 //
 //  Global standard UI variables
