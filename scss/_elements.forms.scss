@@ -7,23 +7,25 @@
 
   $color-fieldset-bg:           $color-grey-lighter !default;
 
-
+  //
+  // 1. Specifing lobotomized owl selector to define a small specing value.
+  //
 
   fieldset {
     background-color: $color-fieldset-bg;
     border-radius: $global-border-radius;
     padding: $global-spacing-unit;
+
+    + * {
+      margin-top: $global-spacing-unit; /* [1] */
+    }
   }
 
   label {
     @include clearfix();
 
-    //
-    // Specifing lobotomized owl selector to define a small specing value.
-    //
-
     + * {
-      margin-top: $global-spacing-unit-tiny;
+      margin-top: $global-spacing-unit-tiny; /* [1] */
     }
   }
 }

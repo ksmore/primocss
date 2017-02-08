@@ -9,9 +9,9 @@
   //    equally. This system should antisipate spacing instead of setting
   //    specifics.
   //
-  //    .2 specifies the <h1> element directly to override normalize styles
+  //    .2 specifies the element directly to override normalize styles
   //
-  // 3. Following elements do not require any margin at all, this should override
+  // 2. Following elements do not require any margin at all, this should override
   //    the global vertical rythm.
   //
 
@@ -19,11 +19,12 @@
     margin: 0; /* [1] */
 
     + *,
-    + h1 /* [1.2] */ {
+    + h1, /* [1.2] */
+    + fieldset /* [1.2] */ {
       margin-top: $global-spacing-unit; /* [1] */
     }
   }
-  
+
   body,
   br,
   li,
