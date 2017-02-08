@@ -4,10 +4,12 @@
   //
   // Sets the grid spacing value used for gutters
   //
-  
+
   $grid-spacing-unit:    round($global-spacing-unit) !default;
   $grid-max-columns:     12 !default;
   $grid-column-value:    100% / $grid-max-columns;
+
+
 
   //
   // Flex grid based on the work by Heydon Pickering https://github.com/Heydon/fukol-grids.

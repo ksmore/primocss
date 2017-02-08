@@ -1,7 +1,14 @@
 @if $use-element-media == true {
   // ELEMENTS - Media
 
+  //
+  // Media variables
+  //
+
   $color-figure-border:        $color-grey !default;
+
+
+
   //
   // Makes sure the <img> tag doesn't scale higher or wider than its parent
   //
