@@ -39,6 +39,12 @@ $global-line-height:          24px !default;
 $global-font-family:          'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif !default;
 
 //
+//  Global font-weight
+//
+
+$global-font-weight:          400 !default;
+
+//
 //  Global framework color.
 //
 
@@ -89,6 +95,18 @@ $global-breakpoints: (
   xl:                         1280px
 );
 
+
+// FONTS
+
+//
+// Font weights
+//
+
+$font-weight-lt:              300 !default;
+$font-weight-rg:              400 !default;
+$font-weight-sb:              600 !default;
+$font-weight-bd:              700 !default;
+$font-weight-xb:              800 !default;
 
 
 

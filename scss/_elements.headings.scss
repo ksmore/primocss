@@ -13,40 +13,47 @@
   $font-size-h5:               16px !default;
   $font-size-h6:               14px !default;
 
+  $font-weight-lt:             300 !default;
+  $font-weight-rg:             400 !default;
+  $font-weight-sb:             600 !default;
+  $font-weight-bd:             700 !default;
+  $font-weight-xb:             800 !default;
+
 
 
   h1 {
-    @include font-size($font-size-h1);
+    @include font-heading($font-size-h1, $font-weight-sb);
 
     //
-    // Specifing lobotomized owl selector to override normalize margin styles.
-    // This keep's the <h1> element inline with all other elements / classes.
+    // 1. Specifing lobotomized owl selector to override normalize margin
+    //    styles. This keep's the <h1> element inline with all other elements
+    //    or classes.
     //
 
     margin: 0;
 
     + * {
-      margin-top: $global-spacing-unit;
+      margin-top: $global-spacing-unit; /* [1] */
     }
   }
 
   h2 {
-    @include font-size($font-size-h2);
+    @include font-heading($font-size-h2, $font-weight-sb);
   }
 
   h3 {
-    @include font-size($font-size-h3)
+    @include font-heading($font-size-h3, $font-weight-sb);
   }
 
   h4 {
-    @include font-size($font-size-h4)
+    @include font-heading($font-size-h4, $font-weight-sb);
   }
 
   h5 {
-    @include font-size($font-size-h5)
+    @include font-heading($font-size-h5, $font-weight-sb);
   }
 
   h6 {
-    @include font-size($font-size-h6)
+    @include font-heading($font-size-h6, $font-weight-sb);
   }
 }

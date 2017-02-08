@@ -3,8 +3,8 @@
 //
 //  Simple base page setup for Ground Work.
 //
-//  1. Sets the default font-family, font-size, line-height and color for the
-//     whole framework and set with the default global variables.
+//  1. Sets the default font-family, font-size, font-weight, line-height and
+//     color for the whole framework and set with the default global variables.
 //
 //  2. Ensures the whole html element fills the entire height of the viewport.
 //
@@ -17,9 +17,10 @@
 //
 
 html {
-  font-size: ($global-font-size / 16px) * 1rem; /* [1] */
-  font-family: $global-font-family; /* [1] */
   color: $global-color; /* [1] */
+  font-family: $global-font-family; /* [1] */
+  font-size: ($global-font-size / 16px) * 1rem; /* [1] */
+  font-weight: $global-font-weight;
   line-height: $global-line-height / $global-font-size; /* [1] */
   min-height: 100%; /* [2] */
   overflow-y: scroll; /* [3] */
@@ -29,7 +30,7 @@ html {
 }
 
 * {
+  color: inherit; /* [4] */
   font-family: inherit; /* [4] */
   line-height: inherit; /* [4] */
-  color: inherit; /* [4] */
 }

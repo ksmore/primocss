@@ -3,6 +3,7 @@
 //
 // Calculates REM value
 //
+
 @function calculate-rem($size) {
   $rem-size: $size / 16px;
   @return $rem-size * 1rem;
@@ -11,6 +12,7 @@
 //
 // Creates REM and PX font size
 //
+
 @mixin font-size($size) {
   font-size: $size;
   font-size: calculate-rem($size);
