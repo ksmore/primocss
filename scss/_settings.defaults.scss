@@ -13,7 +13,7 @@
 //  accessibility issues in the browser. Set to true or false to load.
 //
 
-$testing-mode:               false !default;
+$testing-mode:                false !default;
 
 
 
@@ -125,6 +125,7 @@ $use-element-links:           true !default;
 $use-element-lists:           true !default;
 $use-element-media:           true !default;
 $use-element-page:            true !default;
+$use-element-pre:            true !default;
 $use-element-quote:           true !default;
 $use-element-table:           true !default;
 

@@ -1,0 +1,8 @@
+@if $use-element-table == true {
+
+  table {
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+  }
+} // endif

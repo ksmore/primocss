@@ -1,0 +1,7 @@
+@if $use-element-pre == true {
+
+  pre {
+    tab-width: 4;
+    white-space: pre-wrap;
+  }
+} // endif
