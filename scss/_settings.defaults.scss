@@ -37,6 +37,7 @@ $global-line-height:          24px !default;
 //
 
 $global-font-family:          'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif !default;
+$global-mono-font-family:     Consolas, monaco, monospace !default;
 
 //
 //  Global font-weight
@@ -125,7 +126,7 @@ $use-element-links:           true !default;
 $use-element-lists:           true !default;
 $use-element-media:           true !default;
 $use-element-page:            true !default;
-$use-element-pre:            true !default;
+$use-element-pre:             true !default;
 $use-element-quote:           true !default;
 $use-element-table:           true !default;
 
