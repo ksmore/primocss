@@ -5,7 +5,7 @@
   // Sets the grid spacing value used for gutters
   //
 
-  $grid-spacing-unit:    round($global-spacing-unit) !default;
+  $grid-spacing-unit:    $global-spacing-unit !default;
   $grid-max-columns:     12 !default;
   $grid-column-value:    100% / $grid-max-columns;
 
@@ -23,11 +23,43 @@
     margin-right: -#{$grid-spacing-unit};
     margin-left: -#{$grid-spacing-unit};
 
+    //
+    // Sets a small margin offests when on responsive is true
+    //
+
+    @if $global-responsive == true {
+      @include set-breakpoint-max(md) {
+        margin-right: -#{$global-spacing-unit-sm};
+        margin-left: -#{$global-spacing-unit-sm};
+      }
+
+      @include set-breakpoint-max(sm) {
+        margin-right: -#{$global-spacing-unit-xs};
+        margin-left: -#{$global-spacing-unit-xs};
+      }
+    } // endif
+
     > * {
       flex: 1 0 10rem;
       margin-right: $grid-spacing-unit;
       margin-left: $grid-spacing-unit;
       margin-top: 0;
+
+      //
+      // Sets a small margin offests when on responsive is true
+      //
+
+      @if $global-responsive == true {
+        @include set-breakpoint-max(md) {
+          margin-right: $global-spacing-unit-sm;
+          margin-left: $global-spacing-unit-sm;
+        }
+
+        @include set-breakpoint-max(sm) {
+          margin-right: $global-spacing-unit-xs;
+          margin-left: $global-spacing-unit-xs;
+        }
+      } // endif
 
       //
       // Sets a blanket 100% width on all grid items when at the md 768px
@@ -51,7 +83,9 @@
             $prefix: breakpoint-min-prefix($breakpoint, $global-breakpoints);
 
             @for $grid-col from 1 through $grid-max-columns {
+
               $grid-width: $grid-column-value * $grid-col;
+
               &.grid#{$prefix}-col-#{$grid-col} {
                 flex-basis: calc(#{$grid-width} - #{$grid-spacing-unit} * 2);
                 max-width: calc(#{$grid-width} - #{$grid-spacing-unit} * 2);

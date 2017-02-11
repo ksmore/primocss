@@ -1,3 +1,3 @@
-# Ground Work
+# Primo CSS Framework
 
-Ground work, a light weight mobile friendly CSS framework for web & UI development.
+Primo CSS Framework, a light weight mobile friendly CSS framework for web & UI development.

@@ -5,7 +5,7 @@
   // Form colours
   //
 
-  $color-fieldset-bg:           $color-grey-lighter !default;
+  $color-fieldset-bd:           $color-grey-lighter !default;
 
 
 
@@ -14,7 +14,8 @@
   //
 
   fieldset {
-    background-color: $color-fieldset-bg;
+    border: 1px solid;
+    border-color: $color-fieldset-bd;
     border-radius: $global-border-radius;
     padding: $global-spacing-unit;
 
@@ -34,6 +35,14 @@
           margin-top: $global-spacing-unit-sm;
         }
       } // endif
+    }
+
+    legend {
+      background-color: $global-background-color;
+      border: 1px solid;
+      border-color: $color-fieldset-bd;
+      border-radius: $global-border-radius;
+      padding: $global-spacing-unit-sm $global-spacing-unit;
     }
   }
 

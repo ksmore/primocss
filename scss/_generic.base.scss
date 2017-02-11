@@ -1,7 +1,7 @@
 // GENERIC - Base
 
 //
-//  Simple base page setup for Ground Work.
+//  Simple base page setup for Primo CSS Framework.
 //
 //  1. Sets the default font-family, font-size, font-weight, line-height and
 //     color for the whole framework and set with the default global variables.
@@ -15,8 +15,11 @@
 //     line-height and color. This should keep a level of consistancy for the
 //     entire framework.
 //
+//  5. Setting the global background color.
+//
 
 html {
+  background-color: $global-background-color; /* [5] */
   color: $global-color; /* [1] */
   font-family: $global-font-family; /* [1] */
   font-size: ($global-font-size / 16px) * 1rem; /* [1] */
@@ -24,6 +27,7 @@ html {
   line-height: $global-line-height / $global-font-size; /* [1] */
   min-height: 100%; /* [2] */
   overflow-y: scroll; /* [3] */
+  overflor-x: hidden; /* [3] */
 
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
