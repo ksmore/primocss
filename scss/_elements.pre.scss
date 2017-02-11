@@ -3,12 +3,13 @@
 
   code,
   pre {
+    font-family: $global-mono-font-family;
+    hyphens: none;
+    tab-size: 4;
     text-align: left;
     white-space: pre;
     word-spacing: normal;
     word-wrap: break-word;
-    tab-size: 4;
-    hyphens: none;
   }
 
   pre {
@@ -18,5 +19,10 @@
     background-color: $color-white;
     color: $color-grey-darkest;
     border-radius: $global-border-radius;
+
+    code {
+      background-color: $color-transparent;
+      padding: 0;
+    }
   }
 } // endif

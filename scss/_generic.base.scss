@@ -19,11 +19,11 @@
 //
 
 html {
+  @include font-size($global-font-size); /* [1] */
   background-color: $global-background-color; /* [5] */
   color: $global-color; /* [1] */
   font-family: $global-font-family; /* [1] */
-  font-size: ($global-font-size / 16px) * 1rem; /* [1] */
-  font-weight: $global-font-weight;
+  font-weight: $global-font-weight; /* [1] */
   line-height: $global-line-height / $global-font-size; /* [1] */
   min-height: 100%; /* [2] */
   overflow-y: scroll; /* [3] */
@@ -31,6 +31,20 @@ html {
 
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+
+  //
+  // Sets font-size for set breakpoints if $global-responsive is set to true
+  //
+
+  @if $global-responsive == true {
+    @include set-breakpoint-max(md) {
+      @include font-size($global-font-size - 2);
+    }
+
+    @include set-breakpoint-max(sm) {
+      @include font-size($global-font-size - 4);
+    }
+  } // endif
 }
 
 * {
