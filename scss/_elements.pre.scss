@@ -1,7 +1,22 @@
 @if $use-element-pre == true {
+  // ELEMENTS - pre
+
+  code,
+  pre {
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-wrap: break-word;
+    tab-size: 4;
+    hyphens: none;
+  }
 
   pre {
-    tab-width: 4;
-    white-space: pre-wrap;
+    overflow: auto;
+    padding: $global-spacing-unit;
+    border: 1px solid $color-grey-light;
+    background-color: $color-white;
+    color: $color-grey-darkest;
+    border-radius: $global-border-radius;
   }
 } // endif

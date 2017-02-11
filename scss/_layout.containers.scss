@@ -25,8 +25,12 @@
     //
 
     @if $global-responsive == true {
+      @include set-breakpoint-max(sm) {
+        padding: $global-spacing-unit-xs;
+      }
+
       @include set-breakpoint-max(md) {
-        padding: 0 $global-spacing-unit-xs;
+        padding: $global-spacing-unit-sm;
       }
     } // endif
   }

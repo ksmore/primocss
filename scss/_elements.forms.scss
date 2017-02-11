@@ -20,6 +20,20 @@
 
     + * {
       margin-top: $global-spacing-unit; /* [1] */
+
+      //
+      // Sets spacing for medium and small breakpoint if responsive is true
+      //
+
+      @if $global-responsive == true {
+        @include set-breakpoint-max(sm) {
+          margin-top: $global-spacing-unit-xs;
+        }
+
+        @include set-breakpoint-max(md) {
+          margin-top: $global-spacing-unit-sm;
+        }
+      } // endif
     }
   }
 
