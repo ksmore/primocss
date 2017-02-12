@@ -1,3 +1,5 @@
+![alt text](https://raw.githubusercontent.com/primocss/logos/master/primocss-logo.svg "Primo CSS logo")
+
 # Primo CSS Framework
 
 *Primo CSS Framework, a light weight and mobile friendly CSS framework for web & UI development.*
