@@ -1,4 +1,4 @@
-![alt text](https://raw.githubusercontent.com/primocss/logos/master/primocss-logo.svg "Primo CSS logo")
+![alt text](https://raw.githubusercontent.com/primocss/logos/master/primocss-logo.png "Primo CSS logo")
 
 # Primo CSS Framework
 
