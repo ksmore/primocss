@@ -1,5 +1,7 @@
+// TOOLS - Form patterns
+
 //
-// Form pattern styles
+// Form input styles
 //
 
 %form-input-style {
@@ -31,10 +33,13 @@
   }
 }
 
+//
+// Form select styles
+//
+
 %form-select-style {
   @extend %form-input-style;
   background-color: $color-white;
-
 
   //
   // Removes firefox select styles & arrow
@@ -42,7 +47,6 @@
 
   text-indent: .01px;
   text-overflow: '';
-
 
   //
   // Removes firefox dotted outline focusing

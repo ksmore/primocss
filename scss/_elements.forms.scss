@@ -54,7 +54,6 @@
       margin-top: $global-spacing-unit-xs; /* [1] */
     }
 
-
     //
     // Sets spacing to center radio and checkboxes more to the label element
     //
@@ -95,7 +94,6 @@
     &[type='datalist'] {
       @extend %form-input-style;
     }
-
 
     //
     // Sets explicit sizing for the colour picker input type
