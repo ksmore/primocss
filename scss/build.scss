@@ -3,14 +3,17 @@
 @import 'settings.colors';
 @import 'settings.defaults';
 
+
 @import 'tools.clearfix';
 @import 'tools.breakpoints';
 @import 'tools.font-size';
 @import 'tools.font-heading';
 
+
 @import 'generic.reset';
 @import 'generic.base';
 @import 'generic.box-sizing';
+
 
 @import 'elements.forms';
 @import 'elements.headings';
@@ -20,8 +23,7 @@
 @import 'elements.media';
 @import 'elements.pre';
 @import 'elements.page';
-
-// @import 'elements.quotes';
+@import 'elements.quotes';
 @import 'elements.table';
 
 
