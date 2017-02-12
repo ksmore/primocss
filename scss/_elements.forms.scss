@@ -22,6 +22,7 @@
     + * {
       margin-top: $global-spacing-unit; /* [1] */
 
+
       //
       // Sets spacing for medium and small breakpoint if responsive is true
       //
@@ -52,5 +53,73 @@
     + * {
       margin-top: $global-spacing-unit-xs; /* [1] */
     }
+
+
+    //
+    // Sets spacing to center radio and checkboxes more to the label element
+    //
+
+    > input {
+
+      &[type='checkbox'],
+      &[type='radio'] {
+        margin-top: $global-spacing-unit-xs;
+        margin-right: $global-spacing-unit-sm;
+      }
+
+      &[type='checkbox'] {
+        vertical-align: text-top;
+      }
+
+      &[type='radio'] {
+        vertical-align: top;
+      }
+    }
+  }
+
+  input {
+
+    &[type='text'],
+    &[type='password'],
+    &[type='color'],
+    &[type='date'],
+    &[type='datetime-local'],
+    &[type='email'],
+    &[type='month'],
+    &[type='number'],
+    &[type='search'],
+    &[type='tel'],
+    &[type='time'],
+    &[type='url'],
+    &[type='week'],
+    &[type='datalist'] {
+      @extend %form-input-style;
+    }
+
+
+    //
+    // Sets explicit sizing for the colour picker input type
+    //
+
+    &[type='color'] {
+      background-color: $color-white;
+      min-height: 44px;
+      min-width: 66px;
+
+      &::-webkit-color-swatch {
+        border-radius: $global-border-radius;
+      }
+    }
+  }
+
+  textarea {
+    @extend %form-input-style;
+
+    height: auto;
+    min-height: 175px;
+  }
+
+  select {
+    @extend %form-select-style;
   }
 }
