@@ -1,0 +1,40 @@
+// TOOLS - Input pattern
+
+//
+// Form input styles
+//
+
+@mixin input-pattern (
+  $input-font-size: $global-font-size,
+  $input-bd-color: $color-grey-light,
+  $input-bd-focus: $color-blue,
+  $input-bd-radius: $global-border-radius
+) {
+  @include font-size($input-font-size);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid $input-bd-color;
+  border-radius: $input-bd-radius;
+  outline: none;
+  padding: $global-spacing-unit-sm $global-spacing-unit;
+  transition: ease-in-out, width .35s ease-in-out;
+
+  &:focus {
+    border-color: $input-bd-focus;
+    box-shadow: 0px 0px 5px rgba($input-bd-focus, .5);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: .5;
+  }
+
+  &[readonly] {
+
+    &:focus {
+      border-color: $input-bd-color;
+      box-shadow: none;
+    }
+  }
+}
