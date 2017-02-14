@@ -2,6 +2,11 @@
 
 # Primo CSS Framework
 
+[![Build Status](https://travis-ci.org/primocss/primocss.svg?branch=master)](https://travis-ci.org/primocss/primocss)
+[![npm version](https://badge.fury.io/js/primocss.svg)](http://badge.fury.io/js/primocss)
+[![Downloads](http://img.shields.io/npm/dm/primocss.svg)](https://www.npmjs.com/package/primocss)
+[![devDependency Status](https://david-dm.org/primocss/primocss/dev-status.svg)](https://david-dm.org/primocss/primocss#info=devDependencies)
+
 *Primo CSS Framework, a light weight and mobile friendly CSS framework for web & UI development.*
 
 Primo is a framework which provides the prime starting blocks for any front-end requirements. Without supplying out of the box solutions or mantras to follow, it creates a solid architecture footing to complete any project.
