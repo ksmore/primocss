@@ -114,6 +114,14 @@
       }
     }
 
+    &[type='search'] {
+
+      &::-webkit-search-cancel-button,
+      &::-webkit-searchfield-cancel-button {
+        appearance: searchfield-cancel-button;
+      }
+    }
+
     &[type='submit'],
     &[type='reset'] {
       @include button-pattern();

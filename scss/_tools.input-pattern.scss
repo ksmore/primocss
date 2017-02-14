@@ -11,11 +11,10 @@
   $input-bd-radius: $global-border-radius
 ) {
   @include font-size($input-font-size);
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   border: 1px solid $input-bd-color;
   border-radius: $input-bd-radius;
+  font-family: inherit;
   outline: none;
   padding: $global-spacing-unit-sm $global-spacing-unit;
   transition: ease-in-out, width .35s ease-in-out;
@@ -36,5 +35,9 @@
       border-color: $input-bd-color;
       box-shadow: none;
     }
+  }
+
+  &[aria-invalid='true'] {
+    border-color: $color-red;
   }
 }

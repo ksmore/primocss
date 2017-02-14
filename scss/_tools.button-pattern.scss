@@ -22,8 +22,9 @@
   border-radius: $btn-bd-radius;
   color: $btn-font-color;
   cursor: pointer;
+  font-family: inherit;
   outline: none;
-  padding: $global-spacing-unit-xs $global-spacing-unit;
+  padding: $global-spacing-unit-sm $global-spacing-unit;
   text-decoration: none;
 
   &:active,
