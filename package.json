@@ -21,9 +21,16 @@
     "library",
     "frontend",
     "style",
-    "guide"
+    "guide",
+    "mixin",
+    "module",
+    "ITCSS"
   ],
-  "author": "Richard McCartney",
+  "author": {
+    "email": "richard@mccartney.io",
+    "name": "Richard McCartney",
+    "url": "http://mccartney.io/"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/primocss/primocss/issues"
@@ -35,6 +42,7 @@
     "gulp-cssnano": "^2.1.2",
     "gulp-rename": "1.2.2",
     "gulp-sass": "3.1.0",
+    "gulp-sass-lint": "1.3.2",
     "gulp-sourcemaps": "^2.3.1"
   },
   "dependencies": {

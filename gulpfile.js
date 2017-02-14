@@ -3,9 +3,17 @@ gulp = require('gulp'),
 sass = require('gulp-sass'),
 autoprefixer = require('gulp-autoprefixer'),
 cssnano = require('gulp-cssnano'),
+sassLint = require('gulp-sass-lint'),
 rename = require('gulp-rename'),
 sourcemaps = require('gulp-sourcemaps'),
 sassPath = 'scss/build.scss';
+
+// Gulp help instructions triggered as Gulp default task
+gulp.task('help', function() {
+  console.log('develop - Watch sass files and generate unminified CSS for development');
+  console.log('test  - Lint Sass');
+  console.log('build  - Lint Sass files and generate minified CSS for production');
+});
 
 // Provide details of Sass errors
 function throwSassError(sassError) {
@@ -19,6 +27,14 @@ function throwSassError(sassError) {
     )
   });
 }
+
+// Lints Sass and provides errors
+gulp.task('lint:sass', function() {
+  return gulp.src('scss/**/*.s+(a|c)ss')
+    .pipe(sassLint())
+    .pipe(sassLint.format())
+    .pipe(sassLint.failOnError())
+});
 
 // Build Sass for local development
 gulp.task('sass:develop', function() {
@@ -45,3 +61,14 @@ gulp.task('sass:build', function() {
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('build/css/'));
 });
+
+// Watch tasks
+gulp.task('watch', function() {
+  gulp.watch('scss/**/*', ['sass:develop']);
+});
+
+// Gulp default tasks
+gulp.task('default', ['help']);
+gulp.task('develop', ['watch', 'sass:develop']);
+gulp.task('test', ['lint:sass', 'lint:spellcheck']);
+gulp.task('build', ['lint:sass', 'sass:build']);

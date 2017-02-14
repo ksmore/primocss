@@ -114,6 +114,10 @@
       }
     }
 
+    //
+    // Re-enables the -webkit- search pseudo elements
+    //
+
     &[type='search'] {
 
       &::-webkit-search-cancel-button,
@@ -142,6 +146,7 @@
     background-position: top 20px right $global-spacing-unit;
     background-repeat: no-repeat;
     background-size: 10px 3px;
+    
     //
     // Removes firefox select styles & arrow
     //
