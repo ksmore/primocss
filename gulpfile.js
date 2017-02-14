@@ -70,5 +70,5 @@ gulp.task('watch', function() {
 // Gulp default tasks
 gulp.task('default', ['help']);
 gulp.task('develop', ['watch', 'sass:develop']);
-gulp.task('test', ['lint:sass', 'lint:spellcheck']);
+gulp.task('test', ['lint:sass']);
 gulp.task('build', ['lint:sass', 'sass:build']);
