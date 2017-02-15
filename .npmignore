@@ -1,0 +1,4 @@
+### NPM ignore files or folders ###
+.travis.yml
+element-library.html
+gulpfile.js

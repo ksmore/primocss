@@ -6,7 +6,7 @@ cssnano = require('gulp-cssnano'),
 sassLint = require('gulp-sass-lint'),
 rename = require('gulp-rename'),
 sourcemaps = require('gulp-sourcemaps'),
-sassPath = 'scss/build.scss';
+sassPath = 'scss/primocss-0.0.2.scss';
 
 // Gulp help instructions triggered as Gulp default task
 gulp.task('help', function() {
@@ -62,13 +62,8 @@ gulp.task('sass:build', function() {
     .pipe(gulp.dest('build/css/'));
 });
 
-// Watch tasks
-gulp.task('watch', function() {
-  gulp.watch('scss/**/*', ['sass:develop']);
-});
-
 // Gulp default tasks
 gulp.task('default', ['help']);
 gulp.task('develop', ['watch', 'sass:develop']);
-gulp.task('test', ['lint:sass']);
+gulp.task('test', ['lint:sass', 'lint:spellcheck']);
 gulp.task('build', ['lint:sass', 'sass:build']);
