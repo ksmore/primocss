@@ -6,10 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/primocss/primocss.git"
-  },
+  "repository": "git+https://github.com/primocss/primocss.git",
   "keywords": [
     "scss",
     "framework",
@@ -26,11 +23,7 @@
     "module",
     "ITCSS"
   ],
-  "author": {
-    "email": "richard@mccartney.io",
-    "name": "Richard McCartney",
-    "url": "http://mccartney.io/"
-  },
+  "author": "Richard McCartney <richard@mccartney.io> (http://mccartney.io/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/primocss/primocss/issues"
