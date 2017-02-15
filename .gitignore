@@ -36,3 +36,7 @@ build/*
 ### NPM ###
 node_modules/
 node_modules/*
+npm-error.log
+
+### YARN ###
+yarn-error.log
