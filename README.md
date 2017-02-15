@@ -2,7 +2,7 @@
 
 # Primo CSS Framework
 
-[![Build Status](https://travis-ci.org/primocss/primocss.svg?branch=master)](https://travis-ci.org/primocss/primocss)
+[![Build Status](https://travis-ci.org/primocss/primocss.svg?branch=develop)](https://travis-ci.org/primocss/primocss)
 [![npm version](https://badge.fury.io/js/primocss.svg)](http://badge.fury.io/js/primocss)
 [![Downloads](http://img.shields.io/npm/dm/primocss.svg)](https://www.npmjs.com/package/primocss)
 [![devDependency Status](https://david-dm.org/primocss/primocss/dev-status.svg)](https://david-dm.org/primocss/primocss#info=devDependencies)
@@ -26,19 +26,13 @@ Primo CSS can be installed to any project using a package manager
 *npm:*
 
 ``` bash
-< npm command to go here >
-```
-
-*Bower:*
-
-``` bash
-< bower command to go here >
+npm install primocss
 ```
 
 *Yarn:*
 
 ``` bash
-< yarn command to go here >
+yarn add primocss
 ```
 
 ## Getting started
