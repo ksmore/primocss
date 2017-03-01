@@ -1,0 +1,7 @@
+// TOOLS - Opacity
+
+@mixin opacity($value) {
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$value})'; // sass-lint:disable-line no-vendor-prefixes
+  filter: alpha(opacity=$value);
+  opacity: $value;
+}

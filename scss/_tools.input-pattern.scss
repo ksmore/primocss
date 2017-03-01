@@ -23,7 +23,18 @@
   transition: border-color .35s ease-in-out;
 
   //
-  // Hover, focus and active states
+  // If responsive set to true, widths to be 100% of parent on medium screens
+  // and lower.
+  //
+
+  @if $global-responsive == true {
+    @include set-breakpoint-max(md) {
+      width: 100%;
+    }
+  } // endif
+
+  //
+  // Hover, focus and active states.
   //
 
   &:hover {
@@ -40,8 +51,12 @@
   //
 
   &:disabled {
+    @include opacity(.5);
     cursor: not-allowed;
-    opacity: .5;
+
+    &:hover {
+      border-color: $input-bd-color;
+    }
   }
 
   &[readonly] {
@@ -54,7 +69,7 @@
   }
 
   //
-  // Input invalid / error style
+  // Input invalid / error style.
   //
 
   &[aria-invalid='true'] {

@@ -19,7 +19,7 @@
 //
 
 html {
-  // sass-lint:disable no-vendor-prefixes
+  // sass-lint:disable-block no-vendor-prefixes
 
   @include font-size($global-font-size); // [1 //
   -moz-osx-font-smoothing: grayscale;

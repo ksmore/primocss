@@ -66,8 +66,8 @@
         margin-top: $global-spacing-unit-xs;
 
         &:disabled {
+          @include opacity(.5);
           cursor: not-allowed;
-          opacity: .5;
         }
       }
 
@@ -147,7 +147,7 @@
     @include input-pattern;
     background-color: $color-white;
     background-image: url('data:image/svg+xml;utf8,%3Csvg width="10" height="3" viewBox="0 0 10 3" xmlns="http://www.w3.org/2000/svg"%3E%3Ctitle%3E⌄%3C/title%3E%3Cpath fill="%23CBCBCB" d="M9.234 0L4.617 3 0 0h1.788l2.83 1.814L7.445 0" fill-rule="evenodd"/%3E%3C/svg%3E');
-    background-position: top 20px right $global-spacing-unit;
+    background-position: top $global-spacing-unit * 1.25 right $global-spacing-unit;
     background-repeat: no-repeat;
     background-size: 10px 3px;
 
