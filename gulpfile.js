@@ -31,7 +31,11 @@ function throwSassError(sassError) {
 // Lints Sass and provides errors
 gulp.task('lint:sass', function() {
   return gulp.src('scss/**/*.s+(a|c)ss')
-    .pipe(sassLint())
+    .pipe(sassLint({
+      options: {
+          configFile: '.sass-lint.yml'
+      }
+    }))
     .pipe(sassLint.format())
     .pipe(sassLint.failOnError())
 });

@@ -1,12 +1,15 @@
 @if $use-element-page == true {
   // ELEMENTS - Page elements such as paragraphs and text formatting elements
 
-  abbr[title] {
-    border-bottom: 1px dotted;
-    text-decoration: none;
+  abbr {
 
-    &:hover {
-      cursor: help;
+    &[title] {
+      border-bottom: 1px dotted;
+      text-decoration: none;
+
+      &:hover {
+        cursor: help;
+      }
     }
   }
 

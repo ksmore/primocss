@@ -14,8 +14,8 @@
   //
 
   img {
-    max-width: 100%;
     height: auto;
+    max-width: 100%;
   }
 
   object,
@@ -34,17 +34,23 @@
   // removes excess height in iOS devices.
   //
 
-  audio:not([controls]) {
-    display: none;
-    height: 0;
+  audio {
+
+    &:not([controls]) {
+      display: none;
+      height: 0;
+    }
   }
 
   //
   // Corrects overflow displayed oddly in IE9
   //
 
-  svg:not(:root) {
-    overflow: hidden;
+  svg {
+
+    &:not(:root) {
+      overflow: hidden;
+    }
   }
 
   figure {
@@ -54,13 +60,13 @@
 
     img,
     iframe {
-      margin: 0 auto;
       display: block;
+      margin: 0 auto;
     }
 
     figcaption {
-      text-align: center;
       font-style: italic;
+      text-align: center;
     }
   }
 } // endif

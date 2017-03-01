@@ -7,7 +7,7 @@
   //
   // Creates the responsive font sizes if global responsive is true
   //
-  
+
   @if $global-responsive == true {
     @include set-breakpoint-max(md) {
       @include font-size($size - 2);

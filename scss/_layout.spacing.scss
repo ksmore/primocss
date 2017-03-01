@@ -16,12 +16,12 @@
   //
 
   * {
-    margin: 0; /* [1] */
+    margin: 0; // [1 //
 
     + *,
-    + h1, /* [1.2] */
-    + fieldset /* [1.2] */ {
-      margin-top: $global-spacing-unit; /* [1] */
+    + h1, // [1.2] //
+    + fieldset  {
+      margin-top: $global-spacing-unit; // [1 //
 
       //
       // Sets spacing for medium and small breakpoint if responsive is true
@@ -48,6 +48,6 @@
   td,
   option,
   .row {
-    margin: 0; /* [2] */
+    margin: 0; // [2] //
   }
 } // endif

@@ -20,8 +20,7 @@
     padding: $global-spacing-unit;
 
     + * {
-      margin-top: $global-spacing-unit; /* [1] */
-
+      margin-top: $global-spacing-unit; // [1] //
 
       //
       // Sets spacing for medium and small breakpoint if responsive is true
@@ -48,10 +47,11 @@
   }
 
   label {
-    @include clearfix();
+    @include clearfix;
+    cursor: pointer;
 
     + * {
-      margin-top: $global-spacing-unit-xs; /* [1] */
+      margin-top: $global-spacing-unit-xs; // [1] //
     }
 
     //
@@ -62,8 +62,8 @@
 
       &[type='checkbox'],
       &[type='radio'] {
-        margin-top: $global-spacing-unit-xs;
         margin-right: $global-spacing-unit-sm;
+        margin-top: $global-spacing-unit-xs;
 
         &:disabled {
           cursor: not-allowed;
@@ -97,7 +97,7 @@
     &[type='url'],
     &[type='week'],
     &[type='datalist'] {
-      @include input-pattern();
+      @include input-pattern;
     }
 
     //
@@ -109,7 +109,7 @@
       min-height: 44px;
       min-width: 66px;
 
-      &::-webkit-color-swatch {
+      &::-webkit-color-swatch { // sass-lint:disable-line no-vendor-prefixes
         border-radius: $global-border-radius;
       }
     }
@@ -119,6 +119,7 @@
     //
 
     &[type='search'] {
+      // sass-lint:disable-block no-vendor-prefixes
 
       &::-webkit-search-cancel-button,
       &::-webkit-searchfield-cancel-button {
@@ -128,25 +129,28 @@
 
     &[type='submit'],
     &[type='reset'] {
-      @include button-pattern();
+      @include button-pattern;
     }
   }
 
   textarea {
-    @include input-pattern();
+    @include input-pattern;
 
     height: auto;
     min-height: 175px;
+    resize: both;
   }
 
   select {
-    @include input-pattern();
+    // sass-lint:disable-block no-vendor-prefixes
+
+    @include input-pattern;
     background-color: $color-white;
     background-image: url('data:image/svg+xml;utf8,%3Csvg width="10" height="3" viewBox="0 0 10 3" xmlns="http://www.w3.org/2000/svg"%3E%3Ctitle%3E⌄%3C/title%3E%3Cpath fill="%23CBCBCB" d="M9.234 0L4.617 3 0 0h1.788l2.83 1.814L7.445 0" fill-rule="evenodd"/%3E%3C/svg%3E');
     background-position: top 20px right $global-spacing-unit;
     background-repeat: no-repeat;
     background-size: 10px 3px;
-    
+
     //
     // Removes firefox select styles & arrow
     //
@@ -169,6 +173,6 @@
   }
 
   button {
-    @include button-pattern();
+    @include button-pattern;
   }
 }

@@ -27,7 +27,7 @@
     margin: 0;
 
     + * {
-      margin-top: $global-spacing-unit; /* [1] */
+      margin-top: $global-spacing-unit; // [1 //
 
       //
       // Sets spacing for medium and small breakpoint if responsive is true

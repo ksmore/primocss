@@ -12,16 +12,16 @@
 
 
   //
-  // Flex grid based on the work by Heydon Pickering https://github.com/Heydon/fukol-grids.
-  // Can be used indipendantly or inconjunction with the column grid classes for
-  // explict widths.
+  // Flex grid based on the work by Heydon Pickering
+  // https://github.com/Heydon/fukol-grids. Can be used indipendantly or
+  // inconjunction with the column grid classes for explict widths.
   //
 
   .grid-row {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -#{$grid-spacing-unit};
     margin-left: -#{$grid-spacing-unit};
+    margin-right: -#{$grid-spacing-unit};
 
     //
     // Sets a small margin offests when on responsive is true
@@ -29,20 +29,20 @@
 
     @if $global-responsive == true {
       @include set-breakpoint-max(md) {
-        margin-right: -#{$global-spacing-unit-sm};
         margin-left: -#{$global-spacing-unit-sm};
+        margin-right: -#{$global-spacing-unit-sm};
       }
 
       @include set-breakpoint-max(sm) {
-        margin-right: -#{$global-spacing-unit-xs};
         margin-left: -#{$global-spacing-unit-xs};
+        margin-right: -#{$global-spacing-unit-xs};
       }
     } // endif
 
     > * {
       flex: 1 0 10rem;
-      margin-right: $grid-spacing-unit;
       margin-left: $grid-spacing-unit;
+      margin-right: $grid-spacing-unit;
       margin-top: 0;
 
       //
@@ -51,13 +51,13 @@
 
       @if $global-responsive == true {
         @include set-breakpoint-max(md) {
-          margin-right: $global-spacing-unit-sm;
           margin-left: $global-spacing-unit-sm;
+          margin-right: $global-spacing-unit-sm;
         }
 
         @include set-breakpoint-max(sm) {
-          margin-right: $global-spacing-unit-xs;
           margin-left: $global-spacing-unit-xs;
+          margin-right: $global-spacing-unit-xs;
         }
       } // endif
 
@@ -74,7 +74,7 @@
           max-width: 100%;
 
           + * {
-            margin-top: $grid-spacing-unit; /* [1] */
+            margin-top: $grid-spacing-unit; // [1 //
           }
         }
 

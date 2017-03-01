@@ -13,12 +13,12 @@
   }
 
   pre {
+    background-color: $color-white;
+    border: 1px solid $color-grey-light;
+    border-radius: $global-border-radius;
+    color: $color-grey-darkest;
     overflow: auto;
     padding: $global-spacing-unit;
-    border: 1px solid $color-grey-light;
-    background-color: $color-white;
-    color: $color-grey-darkest;
-    border-radius: $global-border-radius;
 
     code {
       background-color: $color-transparent;

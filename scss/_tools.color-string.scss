@@ -1,5 +1,7 @@
 // TOOLS - Color string
 
+// sass-lint:disable no-warn
+
 @function color-string($color) {
   @if type-of($color) != 'color' {
     @warn '#{$fill-color} is not a color.';

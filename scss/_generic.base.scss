@@ -19,18 +19,20 @@
 //
 
 html {
-  @include font-size($global-font-size); /* [1] */
-  background-color: $global-background-color; /* [5] */
-  color: $global-color; /* [1] */
-  font-family: $global-font-family; /* [1] */
-  font-weight: $global-font-weight; /* [1] */
-  line-height: $global-line-height / $global-font-size; /* [1] */
-  min-height: 100%; /* [2] */
-  overflow-y: scroll; /* [3] */
-  overflor-x: hidden; /* [3] */
+  // sass-lint:disable no-vendor-prefixes
 
+  @include font-size($global-font-size); // [1 //
+  -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  background-color: $global-background-color; // [5] //
+  color: $global-color; // [1 //
+  font-family: $global-font-family; // [1 //
+  font-weight: $global-font-weight; // [1 //
+  line-height: $global-line-height / $global-font-size; // [1 //
+  min-height: 100%; // [2] //
+  overflow-x: hidden; // [3] //
+  overflow-y: scroll; // [3] //
+
 
   //
   // Sets font-size for set breakpoints if $global-responsive is set to true
@@ -48,7 +50,7 @@ html {
 }
 
 * {
-  color: inherit; /* [4] */
-  font-family: inherit; /* [4] */
-  line-height: inherit; /* [4] */
+  color: inherit; // [4] //
+  font-family: inherit; // [4] //
+  line-height: inherit; // [4] //
 }
