@@ -170,6 +170,12 @@
     &::-ms-expand {
       display: none;
     }
+
+    &[multiple],
+    &[size] {
+      background-image: none;
+      height: auto;
+    }
   }
 
   button {

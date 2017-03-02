@@ -6,17 +6,17 @@
   //  pixel and rem valued font-sizes.
   //
 
-  $font-size-h1:               36px !default;
-  $font-size-h2:               30px !default;
-  $font-size-h3:               24px !default;
-  $font-size-h4:               20px !default;
-  $font-size-h5:               18px !default;
-  $font-size-h6:               16px !default;
+  $h1-font-size:               36px !default;
+  $h2-font-size:               30px !default;
+  $h3-font-size:               24px !default;
+  $h4-font-size:               20px !default;
+  $h5-font-size:               18px !default;
+  $h6-font-size:               16px !default;
 
 
 
   h1 {
-    @include font-heading($font-size-h1, $font-weight-sb);
+    @include font-heading($h1-font-size, $font-weight-sb);
 
     //
     // 1. Specifing lobotomized owl selector to override normalize margin
@@ -46,22 +46,22 @@
   }
 
   h2 {
-    @include font-heading($font-size-h2, $font-weight-sb);
+    @include font-heading($h2-font-size, $font-weight-sb);
   }
 
   h3 {
-    @include font-heading($font-size-h3, $font-weight-sb);
+    @include font-heading($h3-font-size, $font-weight-sb);
   }
 
   h4 {
-    @include font-heading($font-size-h4, $font-weight-sb);
+    @include font-heading($h4-font-size, $font-weight-sb);
   }
 
   h5 {
-    @include font-heading($font-size-h5, $font-weight-sb);
+    @include font-heading($h5-font-size, $font-weight-sb);
   }
 
   h6 {
-    @include font-heading($font-size-h6, $font-weight-sb);
+    @include font-heading($h6-font-size, $font-weight-sb);
   }
 }

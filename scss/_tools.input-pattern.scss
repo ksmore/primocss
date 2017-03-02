@@ -9,8 +9,8 @@
   $input-bd-color: $color-grey-light,
   $input-bd-hover: $color-grey-darker,
   $input-bd-focus: $color-blue,
-  $input-bd-invalid: $color-red,
-  $input-bd-radius: $global-border-radius
+  $input-bd-radius: $global-border-radius,
+  $input-invalid: $color-red
 ) {
   @include font-size($input-font-size);
   appearance: none;
@@ -73,6 +73,12 @@
   //
 
   &[aria-invalid='true'] {
-    border-color: $input-bd-invalid;
+    border-color: $input-invalid;
+
+    + [role='alert'] {
+      @include clearfix;
+      color: $input-invalid;
+      margin-top: $global-spacing-unit-sm;
+    }
   }
 }
