@@ -109,5 +109,14 @@
         margin-right: 0;
       }
     }
+
+    //
+    // Centers all flex items hotizontally regardless of width
+    //
+
+    &--center {
+      align-items: center;
+      justify-content: center;
+    }
   }
 } // endif
