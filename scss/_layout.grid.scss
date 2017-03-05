@@ -46,6 +46,20 @@
       margin-top: 0;
 
       //
+      // Grid column widths
+      //
+
+      @for $grid-col from 1 through $grid-max-columns {
+
+        $grid-width: $grid-column-value * $grid-col;
+
+        &.grid-col-#{$grid-col} {
+          flex-basis: calc(#{$grid-width} - #{$grid-spacing-unit} * 2);
+          max-width: calc(#{$grid-width} - #{$grid-spacing-unit} * 2);
+        }
+      }
+
+      //
       // Sets a small margin offests when on responsive is true
       //
 
