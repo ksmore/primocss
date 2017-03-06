@@ -6,7 +6,8 @@
 //  1. Sets the default font-family, font-size, font-weight, line-height and
 //     color for the whole framework and set with the default global variables.
 //
-//  2. Ensures the whole html element fills the entire height of the viewport.
+//  2. Ensures the whole html & body element fills the entire height of the
+//     viewport.
 //
 //  3. Sets scrollbars to always be visible and prevents horizontal content
 //     jumps between pages with smaller amounts of content.
@@ -28,6 +29,7 @@ html {
   color: $global-color; // [1 //
   font-family: $global-font-family; // [1 //
   font-weight: $global-font-weight; // [1 //
+  height: 100%; // [2] //
   line-height: $global-line-height / $global-font-size; // [1 //
   min-height: 100%; // [2] //
   overflow-x: hidden; // [3] //
@@ -53,4 +55,8 @@ html {
   color: inherit; // [4] //
   font-family: inherit; // [4] //
   line-height: inherit; // [4] //
+}
+
+body {
+  height: 100%; // [2] //
 }

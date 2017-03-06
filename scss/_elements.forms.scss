@@ -127,8 +127,9 @@
       }
     }
 
-    &[type='submit'],
-    &[type='reset'] {
+    &[type='button'],
+    &[type='reset'],
+    &[type='submit'] {
       @include button-pattern;
     }
   }

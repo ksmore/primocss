@@ -18,13 +18,25 @@
   //
 
   .grid-row {
+    border-top: 1px dotted $color-grey-lighter;
     display: flex;
     flex-wrap: wrap;
     margin-left: -#{$grid-spacing-unit};
     margin-right: -#{$grid-spacing-unit};
+    margin-top: 0;
+    padding: $grid-spacing-unit * 3;
 
     //
-    // Sets a small margin offests when on responsive is true
+    // Removes border if it's the first row or the modifier class is used.
+    //
+
+    &:first-child,
+    &--no-border {
+      border-top: 0;
+    }
+
+    //
+    // Sets a small margin offests when on responsive is true.
     //
 
     @if $global-responsive == true {
@@ -39,28 +51,17 @@
       }
     } // endif
 
+    //
+    // Applies generic flex to all children of grid-row.
+    //
+
     > * {
       flex: 1 0 10rem;
       margin-left: $grid-spacing-unit;
       margin-right: $grid-spacing-unit;
-      margin-top: 0;
 
       //
-      // Grid column widths
-      //
-
-      @for $grid-col from 1 through $grid-max-columns {
-
-        $grid-width: $grid-column-value * $grid-col;
-
-        &.grid-col-#{$grid-col} {
-          flex-basis: calc(#{$grid-width} - #{$grid-spacing-unit} * 2);
-          max-width: calc(#{$grid-width} - #{$grid-spacing-unit} * 2);
-        }
-      }
-
-      //
-      // Sets a small margin offests when on responsive is true
+      // Sets a small margin offests when on responsive is true.
       //
 
       @if $global-responsive == true {
@@ -79,7 +80,7 @@
       // Sets a blanket 100% width on all grid items when at the md 768px
       // breakpoint.
       //
-      // 1. Sets the Lobotomized owl selector to work on mobile
+      // 1. Sets the Lobotomized owl selector to work on mobile.
       //
 
       @if $global-responsive == true {
@@ -92,9 +93,29 @@
           }
         }
 
+        //
+        // Grid column widths.
+        //
+
+        @for $grid-col from 1 through $grid-max-columns {
+
+          $grid-width: $grid-column-value * $grid-col;
+
+          &.grid-col-#{$grid-col} {
+            flex-basis: calc(#{$grid-width} - #{$grid-spacing-unit} * 2);
+            max-width: calc(#{$grid-width} - #{$grid-spacing-unit} * 2);
+          }
+        }
+
+        //
+        // Creates grid columns based on breakpoint. Each column is prefixed
+        // width xs, sm, md, lg, xl and coresponds to a min-width breakpoint.
+        // E.g setting .grid-md-col-6 sets a width of 50%
+        //
+
         @each $breakpoint in map-keys($global-breakpoints) {
-          @include set-breakpoint-min($breakpoint) {
-            $prefix: breakpoint-min-prefix($breakpoint, $global-breakpoints);
+          @include set-breakpoint-max($breakpoint) {
+            $prefix: breakpoint-max-prefix($breakpoint, $global-breakpoints);
 
             @for $grid-col from 1 through $grid-max-columns {
 
@@ -111,7 +132,7 @@
     }
 
     //
-    // Removes all gutters on grid rows and columns
+    // Removes all gutters on grid rows and columns.
     //
 
     &--no-gutters {
@@ -125,7 +146,7 @@
     }
 
     //
-    // Centers all flex items hotizontally regardless of width
+    // Centers all flex items hotizontally regardless of width.
     //
 
     &--center {

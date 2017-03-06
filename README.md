@@ -11,13 +11,13 @@
 
 Primo is a framework which provides the prime starting blocks for any front-end requirements. Without supplying out of the box solutions or mantras to follow, it creates a solid architecture footing to complete any project.
 
-## Hotlink
+<!-- ## Hotlink
 
 If you just need to include the latest compiled version of the Primo CSS Framework, use our hosted version and fonts to kick start you project.
 
 ``` html
 < link to go here >
-```
+``` -->
 
 ## Installation
 
@@ -35,7 +35,7 @@ npm install primocss
 yarn add primocss
 ```
 
-## Getting started
+<!-- ## Getting started
 
 < Getting started write up to go here >
 
@@ -49,7 +49,7 @@ yarn add primocss
 
 ### Extending and namespaces
 
-< Extending and namespaces write up to go here >
+< Extending and namespaces write up to go here > -->
 
 ## Contribute
 
