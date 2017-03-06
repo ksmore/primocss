@@ -6,7 +6,7 @@ cssnano = require('gulp-cssnano'),
 sassLint = require('gulp-sass-lint'),
 rename = require('gulp-rename'),
 sourcemaps = require('gulp-sourcemaps'),
-sassPath = 'scss/primocss-0.0.6.scss';
+sassPath = 'scss/primocss-0.0.7.scss';
 
 // Gulp help instructions triggered as Gulp default task
 gulp.task('help', function() {
