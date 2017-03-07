@@ -14,7 +14,7 @@
     }
 
     @include set-breakpoint-max(sm) {
-      @include font-size($size - 4);
+      @include font-size($size - 3);
     }
   }
 }

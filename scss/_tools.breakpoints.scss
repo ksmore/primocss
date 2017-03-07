@@ -12,7 +12,7 @@
 
 @mixin set-breakpoint-min($breakpoint) {
   @if map-has-key($global-breakpoints, $breakpoint) {
-    @media (min-width: #{map-get($global-breakpoints, $breakpoint)}) {
+    @media screen and (min-width: #{map-get($global-breakpoints, $breakpoint)}) {
       @content;
     }
   } @else {
@@ -23,7 +23,7 @@
 
 @mixin set-breakpoint-max($breakpoint) {
   @if map-has-key($global-breakpoints, $breakpoint) {
-    @media (max-width: #{map-get($global-breakpoints, $breakpoint)}) {
+    @media screen and (max-width: #{map-get($global-breakpoints, $breakpoint)}) {
       @content;
     }
   } @else {

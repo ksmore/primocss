@@ -46,7 +46,7 @@ html {
     }
 
     @include set-breakpoint-max(sm) {
-      @include font-size($global-font-size - 4);
+      @include font-size($global-font-size - 3);
     }
   } // endif
 }

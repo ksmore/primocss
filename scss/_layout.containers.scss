@@ -21,16 +21,45 @@
     }
 
     //
-    // Sets a smaller container gutter when responsive is enabled
+    // Uses as a strip of content and to contain grid elements.
+    //
+
+    &--strip {
+      border-top: 1px dotted $color-grey-lighter;
+      margin-top: 0;
+      padding: $global-spacing-unit-lg 0;
+
+      @if $global-responsive == true {
+        @include set-breakpoint-max(md) {
+          padding: $global-spacing-unit 0;
+        }
+
+        @include set-breakpoint-max(sm) {
+          padding: $global-spacing-unit-sm 0;
+        }
+      } // endif
+
+      //
+      // Removes border if it's the first row or the modifier class is used.
+      //
+
+      &:first-child,
+      &-no-border {
+        border-top: 0;
+      }
+    }
+
+    //
+    // Sets a smaller container gutter when responsive is enabled.
     //
 
     @if $global-responsive == true {
-      @include set-breakpoint-max(sm) {
-        padding: $global-spacing-unit-xs;
-      }
-
       @include set-breakpoint-max(md) {
         padding: $global-spacing-unit-sm;
+      }
+
+      @include set-breakpoint-max(sm) {
+        padding: $global-spacing-unit-xs;
       }
     } // endif
   }

@@ -13,6 +13,7 @@
   }
 
   pre {
+    @include font-size($global-font-size - 1px);
     background-color: $color-white;
     border: 1px solid $color-grey-light;
     border-radius: $global-border-radius;
