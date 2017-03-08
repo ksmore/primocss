@@ -23,8 +23,8 @@
     flex: 0 1 auto;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: -#{$global-spacing-unit};
-    margin-right: -#{$global-spacing-unit};
+    margin-left: -#{$global-spacing-unit-sm};
+    margin-right: -#{$global-spacing-unit-sm};
 
     //
     // Applies generic flex to all children of grid-row.
@@ -32,8 +32,8 @@
 
     > * {
       flex: 1 0 auto;
-      margin-left: $global-spacing-unit;
-      margin-right: $global-spacing-unit;
+      margin-left: $global-spacing-unit-sm;
+      margin-right: $global-spacing-unit-sm;
       margin-top: 0;
 
       //
@@ -45,8 +45,8 @@
 
       @if $global-responsive == true {
         @include set-breakpoint-max(md) {
-          flex-basis: calc(100% - #{$global-spacing-unit-lg});
-          max-width: calc(100% - #{$global-spacing-unit-lg});
+          flex-basis: calc(100% - #{$global-spacing-unit});
+          max-width: calc(100% - #{$global-spacing-unit});
         }
       } // endif
 
@@ -61,8 +61,8 @@
         $grid-width: $grid-column-value * $grid-col;
 
         &.grid-col-#{$grid-col} {
-          flex-basis: calc(#{$grid-width} - #{$global-spacing-unit-lg});
-          max-width: calc(#{$grid-width} - #{$global-spacing-unit-lg});
+          flex-basis: calc(#{$grid-width} - #{$global-spacing-unit});
+          max-width: calc(#{$grid-width} - #{$global-spacing-unit});
         }
       }
 
@@ -76,8 +76,8 @@
               $prefix: breakpoint-min-prefix($breakpoint, $global-breakpoints);
 
               &.grid#{$prefix}-col-#{$grid-col} {
-                flex-basis: calc(#{$grid-width} - #{$global-spacing-unit-lg});
-                max-width: calc(#{$grid-width} - #{$global-spacing-unit-lg});
+                flex-basis: calc(#{$grid-width} - #{$global-spacing-unit});
+                max-width: calc(#{$grid-width} - #{$global-spacing-unit});
               }
             }
           } // endif
@@ -93,7 +93,7 @@
         $offset-width: $grid-column-value * $offset-col;
 
         &.offset-col-#{$offset-col} {
-          margin-left: calc(#{$offset-width} + #{$global-spacing-unit});
+          margin-left: calc(#{$offset-width} + #{$global-spacing-unit-sm});
         }
       }
     }
