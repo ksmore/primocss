@@ -27,15 +27,18 @@
     &--strip {
       border-top: 1px dotted $color-grey-lighter;
       margin-top: 0;
-      padding: $global-spacing-unit-lg 0;
+      padding-bottom: $global-spacing-unit-lg;
+      padding-top: $global-spacing-unit-lg;
 
       @if $global-responsive == true {
         @include set-breakpoint-max(md) {
-          padding: $global-spacing-unit 0;
+          padding-bottom: $global-spacing-unit;
+          padding-top: $global-spacing-unit;
         }
 
         @include set-breakpoint-max(sm) {
-          padding: $global-spacing-unit-sm 0;
+          padding-bottom: $global-spacing-unit-sm;
+          padding-top: $global-spacing-unit-sm;
         }
       } // endif
 
@@ -46,6 +49,39 @@
       &:first-child,
       &-no-border {
         border-top: 0;
+      }
+    }
+
+    //
+    // Sets container color.
+    //
+
+    @each $name, $color in $color-list {
+      &--color-#{$name} {
+        background-color: $color;
+
+        //
+        // Sets text colour to white to make certain types readable.
+        //
+        @if $name != orange or $name == white {
+          color: $color-white;
+        }
+      }
+    }
+
+    //
+    // Sets height of the container to be the full height of the window.
+    //
+
+    &--pane {
+      height: 100vh;
+
+      &-half {
+        height: 50vh;
+      }
+
+      &-third {
+        height: calc(100vh / 3);
       }
     }
 

@@ -35,3 +35,20 @@ $color-yellow:                 #ffb400 !default;
 $color-blue:                   #00a6ed !default;
 $color-green:                  #7fb800 !default;
 $color-navy:                   #0d2c54 !default;
+
+
+
+//
+// Colors list array
+//
+
+$color-list: (
+  black: $color-black,
+  white: $color-white,
+  blue: $color-blue,
+  navy: $color-navy,
+  green: $color-green,
+  red: $color-red,
+  orange: $color-orange,
+  yellow: $color-yellow
+) !default;

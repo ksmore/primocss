@@ -5,10 +5,10 @@
 //
 
 @mixin button-pattern (
-  $btn-font-size: $global-font-size,
-  $btn-font-color: inherit,
-  $btn-bg-color: $color-grey-lighter,
-  $btn-bd-color: $color-grey-light,
+  $btn-font-size: $global-font-size - 2,
+  $btn-font-color: $color-white,
+  $btn-bg-color: $color-blue,
+  $btn-bd-color: $color-blue,
   $btn-bd-radius: $global-border-radius
 ) {
   @include font-size($btn-font-size);

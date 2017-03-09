@@ -6,8 +6,8 @@
   //
 
   $grid-max-columns:     12 !default;
-  $grid-column-value:    100% / $grid-max-columns;
-
+  $grid-column-value:    100% / $grid-max-columns !default;
+  $grid-gutters:         $global-spacing-unit !default;
 
 
   //
@@ -17,14 +17,14 @@
   //
 
   .grid-row {
-    box-direction: normal;
-    box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
     display: flex;
     flex: 0 1 auto;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: -#{$global-spacing-unit-sm};
-    margin-right: -#{$global-spacing-unit-sm};
+    margin-left: -#{$grid-gutters / 2};
+    margin-right: -#{$grid-gutters / 2};
 
     //
     // Applies generic flex to all children of grid-row.
@@ -32,8 +32,8 @@
 
     > * {
       flex: 1 0 auto;
-      margin-left: $global-spacing-unit-sm;
-      margin-right: $global-spacing-unit-sm;
+      margin-left: $grid-gutters / 2;
+      margin-right: $grid-gutters / 2;
       margin-top: 0;
 
       //
@@ -45,8 +45,8 @@
 
       @if $global-responsive == true {
         @include set-breakpoint-max(md) {
-          flex-basis: calc(100% - #{$global-spacing-unit});
-          max-width: calc(100% - #{$global-spacing-unit});
+          flex-basis: calc(100% - #{$grid-gutters});
+          max-width: calc(100% - #{$grid-gutters});
         }
       } // endif
 
@@ -61,8 +61,8 @@
         $grid-width: $grid-column-value * $grid-col;
 
         &.grid-col-#{$grid-col} {
-          flex-basis: calc(#{$grid-width} - #{$global-spacing-unit});
-          max-width: calc(#{$grid-width} - #{$global-spacing-unit});
+          flex-basis: calc(#{$grid-width} - #{$grid-gutters});
+          max-width: calc(#{$grid-width} - #{$grid-gutters});
         }
       }
 
@@ -76,8 +76,8 @@
               $prefix: breakpoint-min-prefix($breakpoint, $global-breakpoints);
 
               &.grid#{$prefix}-col-#{$grid-col} {
-                flex-basis: calc(#{$grid-width} - #{$global-spacing-unit});
-                max-width: calc(#{$grid-width} - #{$global-spacing-unit});
+                flex-basis: calc(#{$grid-width} - #{$grid-gutters});
+                max-width: calc(#{$grid-width} - #{$grid-gutters});
               }
             }
           } // endif
@@ -93,7 +93,7 @@
         $offset-width: $grid-column-value * $offset-col;
 
         &.offset-col-#{$offset-col} {
-          margin-left: calc(#{$offset-width} + #{$global-spacing-unit-sm});
+          margin-left: calc(#{$offset-width} + #{$grid-gutters} / 2);
         }
       }
     }
@@ -110,6 +110,14 @@
         margin-left: 0;
         margin-right: 0;
       }
+    }
+
+    //
+    // Sets height to 100%.
+    //
+
+    &--pane {
+      height: 100%;
     }
 
     //

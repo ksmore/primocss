@@ -6,7 +6,7 @@
   //
 
   $color-fieldset-bd:           $color-grey-lighter !default;
-
+  $input-bd-focus:              $color-blue !default;
 
 
   //
@@ -64,6 +64,11 @@
       &[type='radio'] {
         margin-right: $global-spacing-unit-sm;
         margin-top: $global-spacing-unit-xs;
+
+        &:focus {
+          border-color: $input-bd-focus;
+          box-shadow: 0 0 5px rgba($input-bd-focus, .5); // sass-lint:disable-line no-color-literals
+        }
 
         &:disabled {
           @include opacity(.5);
