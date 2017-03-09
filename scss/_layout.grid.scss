@@ -17,6 +17,7 @@
   //
 
   .grid-row {
+    // sass-lint:disable-block no-vendor-prefixes
     -webkit-box-direction: normal;
     -webkit-box-orient: horizontal;
     display: flex;
@@ -121,22 +122,47 @@
     }
 
     //
-    // Start, center and end all flex items hotizontally regardless of width.
+    // Alignment classes. Start, center and end all flex items hotizontally
+    // regardless of width.
     //
 
     &--start {
-      align-items: flex-start;
+      -ms-flex-pack: start;
+      -webkit-box-pack: start;
       justify-content: flex-start;
+      text-align: start;
     }
 
     &--center {
-      align-items: center;
+      -ms-flex-pack: center;
+      -webkit-box-pack: start;
       justify-content: center;
+      text-align: center;
     }
 
     &--end {
-      align-items: flex-end;
+      -ms-flex-pack: end;
+      -webkit-box-pack: start;
       justify-content: flex-end;
+      text-align: end;
+    }
+
+    &--top {
+      -ms-flex-align: start;
+      -webkit-box-align: start;
+      align-items: flex-start;
+    }
+
+    &--middle {
+      -ms-flex-align: center;
+      -webkit-box-align: center;
+      align-items: center;
+    }
+
+    &--bottom {
+      -ms-flex-align: end;
+      -webkit-box-align: end;
+      align-items: flex-end;
     }
   }
 } // endif

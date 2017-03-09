@@ -16,41 +16,13 @@
   code {
     background-color: $color-grey-lighter;
     border-radius: $global-border-radius;
-    padding: $global-spacing-unit-sm;
-
-    //
-    // Reduce the padding if $global-responsive is set to true
-    //
-
-    @if $global-responsive == true {
-      @include set-breakpoint-max(md) {
-        padding: $global-spacing-unit-xs;
-      }
-
-      @include set-breakpoint-max(sm) {
-        padding: $global-spacing-unit-xs;
-      }
-    } // endif
+    padding: $global-spacing-unit-xs;
   }
 
   mark {
     background-color: lighten($color-yellow, 10%);
     border-radius: $global-border-radius;
-    padding: $global-spacing-unit-sm;
-
-    //
-    // Reduce the padding if $global-responsive is set to true
-    //
-
-    @if $global-responsive == true {
-      @include set-breakpoint-max(md) {
-        padding: $global-spacing-unit-xs;
-      }
-
-      @include set-breakpoint-max(sm) {
-        padding: $global-spacing-unit-xs;
-      }
-    } // endif
+    padding: $global-spacing-unit-xs;
   }
 
   //
