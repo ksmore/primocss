@@ -17,7 +17,7 @@
   //
 
   .grid-row {
-    // sass-lint:disable-block no-vendor-prefixes
+    // sass-lint:disable-block no-vendor-prefixes, no-misspelled-properties
     -webkit-box-direction: normal;
     -webkit-box-orient: horizontal;
     display: flex;
@@ -146,8 +146,8 @@
     }
 
     &--top {
-      -webkit-box-align: start;
       -ms-flex-align: start;
+      -webkit-box-align: start;
       align-items: flex-start;
     }
 
