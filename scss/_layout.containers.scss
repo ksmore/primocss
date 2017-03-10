@@ -88,15 +88,27 @@
     //
 
     &--pane {
-      min-height: 100vh;
+      height: 100vh;
 
       &-half {
-        min-height: 50vh;
+        height: 50vh;
       }
 
       &-third {
-        min-height: calc(100vh / 3);
+        height: calc(100vh / 3);
       }
+    }
+
+    //
+    // Aligns content of the container vertically center.
+    //
+
+    &--middle {
+      -ms-flex-align: center;
+      -webkit-box-align: center;
+      align-items: center;
+    	display: flex;
+      flex-wrap: wrap;
     }
   }
 } // endif

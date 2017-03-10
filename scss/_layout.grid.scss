@@ -26,6 +26,7 @@
     flex-wrap: wrap;
     margin-left: -#{$grid-gutters / 2};
     margin-right: -#{$grid-gutters / 2};
+    width: 100%;
 
     //
     // Applies generic flex to all children of grid-row.
@@ -130,26 +131,23 @@
       -ms-flex-pack: start;
       -webkit-box-pack: start;
       justify-content: flex-start;
-      text-align: start;
     }
 
     &--center {
       -ms-flex-pack: center;
       -webkit-box-pack: start;
       justify-content: center;
-      text-align: center;
     }
 
     &--end {
       -ms-flex-pack: end;
       -webkit-box-pack: start;
       justify-content: flex-end;
-      text-align: end;
     }
 
     &--top {
-      -ms-flex-align: start;
       -webkit-box-align: start;
+      -ms-flex-align: start;
       align-items: flex-start;
     }
 
