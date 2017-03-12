@@ -16,19 +16,10 @@
     padding: 0 $global-spacing-unit;
     width: 100%;
 
-    //
-    // Sets a smaller container gutter when responsive is enabled.
-    //
-
-    @if $global-responsive == true {
-      @include set-breakpoint-max(md) {
-        padding: $global-spacing-unit-sm;
-      }
-
-      @include set-breakpoint-max(sm) {
-        padding: $global-spacing-unit-xs;
-      }
-    } // endif
+    > .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
 
     &--fluid { // [1] //
       max-width: 100%;
@@ -41,18 +32,13 @@
     &--strip {
       border-top: 1px dotted $color-grey-lighter;
       margin-top: 0;
-      padding-bottom: $global-spacing-unit-lg;
-      padding-top: $global-spacing-unit-lg;
+      padding-bottom: $global-spacing-unit-xl;
+      padding-top: $global-spacing-unit-xl;
 
       @if $global-responsive == true {
         @include set-breakpoint-max(md) {
-          padding-bottom: $global-spacing-unit;
-          padding-top: $global-spacing-unit;
-        }
-
-        @include set-breakpoint-max(sm) {
-          padding-bottom: $global-spacing-unit-sm;
-          padding-top: $global-spacing-unit-sm;
+          padding-bottom: $global-spacing-unit-lg;
+          padding-top: $global-spacing-unit-lg;
         }
       } // endif
 
@@ -88,14 +74,17 @@
     //
 
     &--pane {
-      height: 100vh;
+      height: 100%;
+      min-height: 100vh;
 
       &-half {
-        height: 50vh;
+        height: 100%;
+        min-height: 50vh;
       }
 
       &-third {
-        height: calc(100vh / 3);
+        height: 100%;
+        min-height: calc(100vh / 3);
       }
     }
 
