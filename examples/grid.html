@@ -14,17 +14,30 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <link href="../build/css/primocss-0.0.7.css" rel="stylesheet" media="screen" type="text/css">
     <style media="screen">
+        .header {
+            padding: 16px;
+        }
+
         .box {
             border-radius: 4px;
             background-color: #EEE;
-            padding: 20px 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .box .box {
+            background-color: #DDD;
+        }
+
+        .box .box .box {
+            background-color: #CCC;
         }
     </style>
 </head>
 <body>
-    <header class="container container--strip container--color-blue container--fluid">
+    <header class="container container--strip container--fluid container--red header">
         <div class="grid-row">
-            <div class="grid-col-12">
+            <div class="grid-col-6">
                 <h1><small>Primo CSS &mdash; Grid</small></h1>
             </div>
         </div>
@@ -176,11 +189,42 @@
         <section class="container--strip">
             <div class="grid-row">
                 <div class="grid-col-12 grid-md-col-6">
-                    <h2>Offset classes</h2>
-                    <p>Creates an offset left margin to mimick column space between itself and another grid element.</p>
+                    <h2>Nesting grids</h2>
+                </div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-col-12">
+                    <div class="box">
+                        <div class="grid-row">
+                            <div class="grid-col-12">
+                                <div class="box">
+                                    <div class="grid-row">
+                                        <div class="grid-col-12 grid-md-col-4">
+                                            <div class="box"></div>
+                                        </div>
+                                        <div class="grid-col-12 grid-md-col-4">
+                                            <div class="box"></div>
+                                        </div>
+                                        <div class="grid-col-12 grid-md-col-4">
+                                            <div class="box"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer class="container container--strip container--fluid">
+        <div class="container">
+            <div class="grid-row">
+                <div class="grid-col-12">
+                    <p><small>&copy; PrimoCSS 2017. <a href="http://primocss.com/">Documentation</a> | <a href="https://github.com/primocss/primocss">GitHub</a>. Built by <a href="http://mccartney.io">Richard McCartney</a>.</small></p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

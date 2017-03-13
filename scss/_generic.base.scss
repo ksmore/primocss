@@ -42,11 +42,11 @@ html {
 
   @if $global-responsive == true {
     @include set-breakpoint-max(md) {
-      @include font-size($global-font-size - 2);
+      @include font-size($global-font-size - 1);
     }
 
     @include set-breakpoint-max(sm) {
-      @include font-size($global-font-size - 3);
+      @include font-size($global-font-size - 2);
     }
   } // endif
 }

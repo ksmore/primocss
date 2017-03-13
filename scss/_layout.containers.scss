@@ -13,16 +13,14 @@
     margin-left: auto;
     margin-right: auto;
     max-width: $global-max-width;
-    padding: 0 $global-spacing-unit;
     width: 100%;
-
-    > .container {
-      padding-left: 0;
-      padding-right: 0;
-    }
+    padding: 0 $global-spacing-unit;
 
     &--fluid { // [1] //
+      margin-top: 0;
       max-width: 100%;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     //
@@ -30,7 +28,7 @@
     //
 
     &--strip {
-      border-top: 1px dotted $color-grey-lighter;
+      border-top: 1px dotted $color-grey-light;
       margin-top: 0;
       padding-bottom: $global-spacing-unit-xl;
       padding-top: $global-spacing-unit-xl;
@@ -46,8 +44,7 @@
       // Removes border if it's the first row or the modifier class is used.
       //
 
-      &:first-child,
-      &-no-border {
+      &:first-child {
         border-top: 0;
       }
     }
@@ -57,13 +54,19 @@
     //
 
     @each $name, $color in $color-list {
-      &--color-#{$name} {
+      &--#{$name} {
         background-color: $color;
 
         //
-        // Sets text colour to white to make certain types readable.
+        // Sets text colour to make color strips readable.
         //
-        @if $name != orange or $name == white {
+        @if $name == yellow {
+          color: $global-color;
+        } @else if $name == grey {
+          color: $global-color
+        } @else if $name == white {
+          color: $global-color
+        } @else {
           color: $color-white;
         }
       }
@@ -95,7 +98,6 @@
       -webkit-box-align: center;
       align-items: center;
       display: flex;
-      flex-wrap: wrap;
     }
   }
 } // endif

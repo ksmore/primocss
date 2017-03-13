@@ -10,11 +10,11 @@
 
   @if $global-responsive == true {
     @include set-breakpoint-max(md) {
-      @include font-size($size - 2);
+      @include font-size($size - 1);
     }
 
     @include set-breakpoint-max(sm) {
-      @include font-size($size - 3);
+      @include font-size($size - 2);
     }
   }
 }

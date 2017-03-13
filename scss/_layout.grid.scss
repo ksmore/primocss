@@ -89,6 +89,7 @@
               &.grid#{$prefix}-col-#{$grid-col} {
                 flex-basis: calc(#{$grid-width} - #{$grid-gutters});
                 max-width: calc(#{$grid-width} - #{$grid-gutters});
+                margin-top: 0;
 
                 &--no-gutter {
                   flex-basis: $grid-width;
