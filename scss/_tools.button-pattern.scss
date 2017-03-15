@@ -14,14 +14,22 @@
   @include font-size($btn-font-size);
   appearance: none;
   background-color: $btn-bg-color;
-  border-color: $btn-bd-color;
-  border-radius: $btn-bd-radius;
-  border-style: solid;
-  border-width: 1px;
+
+  border: {
+    color: $btn-bd-color;
+    radius: $btn-bd-radius;
+    style: solid;
+    width: 1px;
+  }
+
   color: $btn-font-color;
   cursor: pointer;
-  font-family: inherit;
-  font-weight: $font-weight-sb;
+
+  font: {
+    family: inherit;
+    weight: $font-weight-sb;
+  }
+
   outline: none;
   padding: $global-spacing-unit-sm $global-spacing-unit;
   text-decoration: none;

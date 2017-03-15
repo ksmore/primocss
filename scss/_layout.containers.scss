@@ -10,8 +10,12 @@
 
   .container {
     @include clearfix;
-    margin-left: auto;
-    margin-right: auto;
+
+    margin: {
+      left: auto;
+      right: auto;
+    }
+
     max-width: $global-max-width;
     padding: 0 $global-spacing-unit;
     width: 100%;
@@ -19,112 +23,6 @@
     &--fluid { // [1] //
       margin-top: 0;
       max-width: 100%;
-      padding-left: 0;
-      padding-right: 0;
-    }
-
-    //
-    // Uses as a strip of content and to contain grid elements.
-    //
-
-    &--strip {
-      border-top: 1px dotted $color-grey-light;
-      margin-top: 0;
-      padding-bottom: $global-spacing-unit-xl;
-      padding-top: $global-spacing-unit-xl;
-
-      @if $global-responsive == true {
-        @include set-breakpoint-max(md) {
-          padding-bottom: $global-spacing-unit-lg;
-          padding-top: $global-spacing-unit-lg;
-        }
-      } // endif
-
-      //
-      // Removes border if it's the first row or the modifier class is used.
-      //
-
-      &:first-child {
-        border-top: 0;
-      }
-    }
-
-    //
-    // Sets container color.
-    //
-
-    @each $name, $color in $color-list {
-      &--#{$name} {
-        background-color: $color;
-        border-top: 0;
-
-        //
-        // Sets text colour to make color strips readable.
-        //
-        // 1. Sets hover and visited for anchor elements
-        //
-
-        @if $name == yellow {
-          color: $global-color;
-        } @else if $name == grey {
-          color: $global-color;
-        } @else if $name == white {
-          color: $global-color;
-        } @else if $name == navy {
-          color: $color-white;
-
-          a { // [1] //
-
-            &:hover {
-              color: $color-blue;
-            }
-
-            &:visited {
-              color: darken($color-blue, 10%);
-            }
-          }
-        } @else if $name == blue {
-          color: $color-white;
-
-          a { // [1] //
-            color: $color-navy;
-
-            &:hover {
-              color: lighten($color-navy, 20%);
-            }
-
-            &:visited {
-              color: darken($color-navy, 10%);
-            }
-          }
-        } @else {
-          color: $color-white;
-
-          a { // [1] //
-
-            &:hover,
-            &:visited {
-              color: $color-grey-dark;
-            }
-          }
-        }
-      }
-    }
-
-    //
-    // Sets height of the container to be the full height of the window.
-    //
-
-    &--cover {
-      min-height: 100vh;
-
-      &-half {
-        min-height: 50vh;
-      }
-
-      &-third {
-        min-height: calc(100vh / 3);
-      }
     }
 
     //

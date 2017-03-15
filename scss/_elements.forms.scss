@@ -15,7 +15,6 @@
 
   fieldset {
     border: {
-
       color: $color-fieldset-bd;
       radius: $global-border-radius;
       style: solid;
@@ -44,8 +43,8 @@
 
     legend {
       background-color: $global-background-color;
-      border: {
 
+      border: {
         color: $color-fieldset-bd;
         radius: $global-border-radius;
         style: solid;
@@ -124,8 +123,8 @@
 
     &[type='color'] {
       background-color: $color-white;
-      min: {
 
+      min: {
         height: 44px;
         width: 66px;
       }
@@ -157,7 +156,6 @@
 
   textarea {
     @include input-pattern;
-
     height: auto;
     min-height: 175px;
     resize: both;
@@ -167,8 +165,8 @@
     // sass-lint:disable-block no-vendor-prefixes
 
     @include input-pattern;
-    background: {
 
+    background: {
       color: $color-white;
       image: url('data:image/svg+xml;utf8,%3Csvg width="10" height="3" viewBox="0 0 10 3" xmlns="http://www.w3.org/2000/svg"%3E%3Ctitle%3E⌄%3C/title%3E%3Cpath fill="%23CBCBCB" d="M9.234 0L4.617 3 0 0h1.788l2.83 1.814L7.445 0" fill-rule="evenodd"/%3E%3C/svg%3E');
       position: top $global-spacing-unit * 1.25 right $global-spacing-unit;
@@ -181,11 +179,9 @@
     //
 
     text: {
-
       indent: .01px;
       overflow: '';
     }
-
 
     //
     // Removes firefox dotted outline focusing

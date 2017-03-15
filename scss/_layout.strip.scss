@@ -1,0 +1,96 @@
+@if $use-layout-strip == true {
+  // LAYOUT - Strip
+
+  //
+  // Uses as a strip of content and to contain grid elements.
+  //
+
+  .strip {
+    border-top: 1px dotted $color-grey-light;
+    margin-top: 0;
+
+    padding: {
+      bottom: $global-spacing-unit-xl;
+      top: $global-spacing-unit-xl;
+    }
+
+    @if $global-responsive == true {
+      @include set-breakpoint-max(md) {
+        padding: {
+          bottom: $global-spacing-unit-lg;
+          top: $global-spacing-unit-lg;
+        }
+      }
+    } // endif
+
+    //
+    // Removes border if it's the first row or the modifier class is used.
+    //
+
+    &:first-child {
+      border-top: 0;
+    }
+
+    //
+    // Sets container color.
+    //
+
+    @each $name, $color in $color-list {
+      &--#{$name} {
+        background-color: $color;
+        border-top: 0;
+
+        //
+        // Sets text colour to make color strips readable.
+        //
+        // 1. Sets hover and visited for anchor elements
+        //
+
+        @if $name == yellow {
+          color: $global-color;
+        } @else if $name == grey {
+          color: $global-color;
+        } @else if $name == white {
+          color: $global-color;
+        } @else if $name == navy {
+          color: $color-white;
+
+          a { // [1] //
+
+            &:hover {
+              color: $color-blue;
+            }
+
+            &:visited {
+              color: darken($color-blue, 10%);
+            }
+          }
+        } @else if $name == blue {
+          color: $color-white;
+
+          a { // [1] //
+            color: $color-navy;
+
+            &:hover {
+              color: lighten($color-navy, 20%);
+            }
+
+            &:visited {
+              color: darken($color-navy, 10%);
+            }
+          }
+        } @else {
+          color: $color-white;
+
+          a { // [1] //
+
+            &:hover,
+            &:visited {
+              color: $color-grey-dark;
+            }
+          }
+        }
+      }
+    }
+  }
+} // endif

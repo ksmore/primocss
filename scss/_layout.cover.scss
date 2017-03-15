@@ -1,0 +1,39 @@
+@if $use-layout-cover == true {
+  // LAYOUT - Cover
+
+  //
+  // Sets the height spacing value
+  //
+
+  $cover-height:         100vh !default;
+
+
+  //
+  // Sets height of an element to be the full height of the window. Best used
+  // with the .container or .grid-row class.
+  //
+
+  .cover {
+    min-height: $cover-height;
+
+    &--half {
+      min-height: calc($cover-height / 2);
+    }
+
+    &--third {
+      min-height: calc($cover-height / 3);
+    }
+
+    //
+    // Aligns content of the container vertically center.
+    //
+
+    &--middle {
+      // sass-lint:disable-block no-vendor-prefixes, no-misspelled-properties
+      -ms-flex-align: center;
+      -webkit-box-align: center;
+      align-items: center;
+      display: flex;
+    }
+  }
+}

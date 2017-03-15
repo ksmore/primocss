@@ -16,7 +16,6 @@
 $testing-mode:                false !default;
 
 
-
 // GLOBAL
 
 //
@@ -111,7 +110,6 @@ $font-weight-bd:              700 !default;
 $font-weight-xb:              800 !default;
 
 
-
 // ELEMENTS, LAYOUT, OBJECTS, COMPONENTS & UTILITIES
 
 //
@@ -136,6 +134,8 @@ $use-element-table:           true !default;
 $use-layout-spacing:          true !default;
 $use-layout-containers:       true !default;
 $use-layout-grids:            true !default;
+$use-layout-strip:            true !default;
+$use-layout-cover:            true !default;
 
 
 

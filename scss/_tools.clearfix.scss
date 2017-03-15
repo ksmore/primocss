@@ -2,8 +2,7 @@
 
 @mixin clearfix {
   &::after {
+    @include pseudo($pos: initial);
     clear: both;
-    content: '';
-    display: block;
   }
 }

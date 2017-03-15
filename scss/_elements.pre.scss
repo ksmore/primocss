@@ -8,15 +8,24 @@
     tab-size: 4;
     text-align: left;
     white-space: pre;
-    word-spacing: normal;
-    word-wrap: break-word;
+
+    word: {
+      spacing: normal;
+      wrap: break-word;
+    }
   }
 
   pre {
     @include font-size($global-font-size - 2);
     background-color: $color-white;
-    border: 1px solid $color-grey-lighter;
-    border-radius: $global-border-radius;
+
+    border: {
+      color: $color-grey-lighter;
+      radius: $global-border-radius;
+      style: solid;
+      width: 1px;
+    }
+
     color: $color-grey-dark;
     overflow: auto;
     padding: $global-spacing-unit;

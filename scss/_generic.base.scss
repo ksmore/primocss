@@ -27,13 +27,19 @@ html {
   -webkit-font-smoothing: antialiased;
   background-color: $global-background-color; // [5] //
   color: $global-color; // [1 //
-  font-family: $global-font-family; // [1 //
-  font-weight: $global-font-weight; // [1 //
+
+  font: {
+    family: $global-font-family; // [1 //
+    weight: $global-font-weight; // [1 //
+  }
+
   height: 100%; // [2] //
   line-height: $global-line-height / $global-font-size; // [1 //
   min-height: 100%; // [2] //
-  overflow-x: hidden; // [3] //
-  overflow-y: scroll; // [3] //
+  overflow: {
+    x: hidden; // [3] //
+    y: scroll; // [3] //
+  }
 
 
   //
