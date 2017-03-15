@@ -1,5 +1,9 @@
 // TOOL - Link style
 
+//
+// Creates base link styles
+//
+
 @mixin link-style(
   $color: $color-white,
   $hover: $color-grey-dark,

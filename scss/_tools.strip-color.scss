@@ -1,5 +1,9 @@
 // TOOLS - Strip color
 
+//
+// Mixin for creating a strip color styles
+//
+
 @mixin strip-color(
   $strip-bg-color: inherit,
   $strip-color: inherit,

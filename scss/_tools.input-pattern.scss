@@ -1,7 +1,7 @@
 // TOOLS - Input pattern
 
 //
-// Form input styles
+// Form input styles.
 //
 
 @mixin input-pattern (
@@ -15,8 +15,9 @@
 ) {
 
   //
-  // Placeholder styles
+  // Placeholder styles.
   //
+
   @include input-placeholder {
     color: $input-placeholder-color;
   }
