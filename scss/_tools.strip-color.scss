@@ -1,0 +1,22 @@
+// TOOLS - Strip color
+
+@mixin strip-color(
+  $strip-bg-color: inherit,
+  $strip-color: inherit,
+  $strip-hover: inherit,
+  $strip-active: inherit,
+  $strip-visited: inherit
+) {
+  background-color: $strip-bg-color;
+  border-top: 0;
+  color: $strip-color;
+
+  a {
+    @include link-style(
+      $color: $strip-color,
+      $hover: $strip-hover,
+      $active: $strip-active,
+      $visited: $strip-visited
+    );
+  }
+}

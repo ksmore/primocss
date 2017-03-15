@@ -32,65 +32,41 @@
     }
 
     //
-    // Sets container color.
+    // Sets container colors and link colors.
     //
 
-    @each $name, $color in $color-list {
-      &--#{$name} {
-        background-color: $color;
-        border-top: 0;
+    @each $name, $color in $strip-colors {
 
-        //
-        // Sets text colour to make color strips readable.
-        //
-        // 1. Sets hover and visited for anchor elements
-        //
+      //
+      // If set to true, set link styles to light.
+      //
 
-        @if $name == yellow {
-          color: $global-color;
-        } @else if $name == grey {
-          color: $global-color;
-        } @else if $name == white {
-          color: $global-color;
-        } @else if $name == navy {
-          color: $color-white;
-
-          a { // [1] //
-
-            &:hover {
-              color: $color-blue;
-            }
-
-            &:visited {
-              color: darken($color-blue, 10%);
-            }
-          }
-        } @else if $name == blue {
-          color: $color-white;
-
-          a { // [1] //
-            color: $color-navy;
-
-            &:hover {
-              color: lighten($color-navy, 20%);
-            }
-
-            &:visited {
-              color: darken($color-navy, 10%);
-            }
-          }
-        } @else {
-          color: $color-white;
-
-          a { // [1] //
-
-            &:hover,
-            &:visited {
-              color: $color-grey-dark;
-            }
-          }
+      @if nth($color, 2) == true {
+        &--#{$name} {
+          @include strip-color(
+            $strip-bg-color: nth($color, 1),
+            $strip-color: $color-white,
+            $strip-hover: $color-grey-light,
+            $strip-active: $color-grey-dark,
+            $strip-visited: $color-grey-dark
+          );
         }
-      }
+
+        //
+        // All other strip link styles set to dark.
+        //
+
+      } @else {
+        &--#{$name} {
+          @include strip-color(
+            $strip-bg-color: nth($color, 1),
+            $strip-color: $color-grey-darker,
+            $strip-hover: $color-grey-darkest,
+            $strip-active: $color-navy,
+            $strip-visited: $color-navy
+          );
+        }
+      } // endif
     }
   }
 } // endif

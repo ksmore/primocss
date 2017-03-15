@@ -11,27 +11,16 @@
 
 
 
+  //
+  // 1. Base link style inherits the color of parent and isn't set.
+  //
+
   a {
-
-    //
-    // 1. Base link style inherits the color of parent and isn't set.
-    //
-
-    &:link {
-      color: inherit; // [1 //
-      text-decoration: underline;
-    }
-
-    &:visited {
-      color: $color-link-visited;
-    }
-
-    &:hover {
-      color: $color-link-hover;
-    }
-
-    &:active {
-      color: $color-link-active;
-    }
+    @include link-style(
+      $color: inherit, // [1] //
+      $hover: $color-link-hover,
+      $active: $color-link-active,
+      $visited: $color-link-visited
+    );
   }
 }

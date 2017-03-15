@@ -17,11 +17,11 @@
     min-height: $cover-height;
 
     &--half {
-      min-height: calc($cover-height / 2);
+      min-height: calc(#{$cover-height} / 2);
     }
 
     &--third {
-      min-height: calc($cover-height / 3);
+      min-height: calc(#{$cover-height} / 3);
     }
 
     //

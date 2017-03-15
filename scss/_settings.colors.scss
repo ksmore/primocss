@@ -39,17 +39,17 @@ $color-navy:                   #0d2c54 !default;
 
 
 //
-// Colors list array
+// Strip colors list
 //
 
-$color-list: (
-  black: $color-grey-darker,
-  white: $color-white,
-  blue: $color-blue,
-  navy: $color-navy,
-  green: $color-green,
-  red: $color-red,
-  orange: $color-orange,
-  yellow: $color-yellow,
-  grey: $color-grey-lighter
+$strip-colors: (
+  black: ($color-grey-darker, true),
+  white: ($color-white, false),
+  blue: ($color-blue, true),
+  navy: ($color-navy, true),
+  green: ($color-green, true),
+  red: ($color-red, true),
+  orange: ($color-orange, true),
+  yellow: ($color-yellow, false),
+  grey: ($color-grey-lighter, false)
 ) !default;
