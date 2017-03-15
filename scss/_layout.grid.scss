@@ -106,6 +106,12 @@
                 margin-top: 0;
                 max-width: calc(#{$grid-width} - #{$grid-gutters});
 
+                @if $grid-col == 12 {
+                  + * {
+                    margin-top: $grid-gutters;
+                  }
+                }
+
                 &--no-gutter {
                   flex-basis: $grid-width;
                   margin: 0;
@@ -139,12 +145,14 @@
       margin: {
         left: 0;
         right: 0;
+        top: 0;
       }
 
       > * {
         margin: {
           left: 0;
           right: 0;
+          top: 0;
         }
       }
     }

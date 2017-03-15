@@ -20,10 +20,13 @@
 <body>
     <header class="strip strip--navy header">
         <div class="container container--fluid">
-            <div class="grid-row">
-                <div class="grid-col-12">
+            <div class="grid-row grid-row--middle">
+                <div class="grid-col-4">
                     <h1><small>PrimoCSS</small></h1>
                 </div>
+                <nav class="grid-col-8 u-align-right">
+                    <!-- <a href="http://primocss.com/docs/">Documentation</a> | --><a href="https://github.com/primocss/primocss">GitHub</a>
+                </nav>
             </div>
         </div>
     </header>
@@ -38,12 +41,12 @@
                 </div>
                 <div class="grid-row">
                     <div class="grid-col-12">
-                        <button onclick="location.href='https://www.npmjs.com/package/primocss'">
-                            <strong>npm install primocss</strong>
+                        <button onclick="location.href='https://www.github.com/primocss/primocss/archive/develop.zip'">
+                            <strong>Download PrimoCSS</strong>
                             <br>
                             <small>verion v0.0.7</small>
                         </button>
-                        <p><small>Or download from <a href="http://github.com/primocss/primocss">GitHub</a>.</small></p>
+                        <p><small>Or install the package <a href="https://www.npmjs.com/package/primocss">npm install primocss</a>.</small></p>
                     </div>
                 </div>
             </div>
@@ -58,12 +61,44 @@
                 </div>
             </div>
         </section>
+        <div class="strip">
+            <div class="container">
+                <div class="grid-row">
+                    <div class="grid-col-12 grid-md-col-6">
+                        <h4>Install as a dependancy</h4>
+                        <p>Via npm or yarn you can include the PrimoCSS source files as a dependancy in your web project. The package only includes the sorce SCSS.</p>
+                        <p><a href="https://github.com/primocss/primocss#installation">View install methods</a></p>
+                    </div>
+                    <div class="grid-col-12 grid-md-col-6">
+                        <h4>Download compiled</h4>
+                        <p>If you require a quick start with no compiling, download and include it on your project.</p>
+                        <p><a href="#">Download option</a></p>
+                        <pre><code>&lt;link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet"&gt;
+&lt;link href="&lt;your path&gt;/primocss.css" rel="stylesheet" media="screen" type="text/css"&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="strip">
+            <div class="container">
+                <div class="grid-row">
+                    <div class="grid-col-12 grid-md-col-4">
+                        <h4>Great starting point</h4>
+                        <p>All the styles and tools have been created as the perfect starting point for your project. This isn't a full framework, trying to impose design styles and mantras.</p>
+                    </div>
+                    <div class="grid-col-12 grid-md-col-4">
+                        <h4>Built with Sass</h4>
+                    </div>
+                    <div class="grid-col-12 grid-md-col-4"></div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="strip">
         <div class="container">
             <div class="grid-row">
                 <div class="grid-col-12">
-                    <p><small>&copy; PrimoCSS 2017. <a href="http://primocss.com/">Documentation</a> | <a href="https://github.com/primocss/primocss">GitHub</a>. Built by <a href="http://mccartney.io">Richard McCartney</a>.</small></p>
+                    <p><small>&copy; PrimoCSS 2017. <!--<a href="http://primocss.com/docs/">Documentation</a> | --><a href="https://github.com/primocss/primocss">GitHub</a>. Built by <a href="http://mccartney.io">Richard McCartney</a>.</small></p>
                 </div>
             </div>
         </div>
