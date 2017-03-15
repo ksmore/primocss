@@ -10,12 +10,27 @@
   $input-bd-hover: $color-grey-darker,
   $input-bd-focus: $color-blue,
   $input-bd-radius: $global-border-radius,
+  $input-placeholder-color: $color-grey-light,
   $input-invalid: $color-red
 ) {
+
+  //
+  // Placeholder styles
+  //
+  @include input-placeholder {
+    color: $input-placeholder-color;
+  }
+
   @include font-size($input-font-size);
   appearance: none;
-  border: 1px solid $input-bd-color;
-  border-radius: $input-bd-radius;
+
+  border: {
+    color: $input-bd-color;
+    radius: $input-bd-radius;
+    style: solid;
+    width: 1px;
+  }
+
   font-family: inherit;
   max-width: 100%;
   outline: none;

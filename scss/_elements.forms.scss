@@ -14,9 +14,14 @@
   //
 
   fieldset {
-    border: 1px solid;
-    border-color: $color-fieldset-bd;
-    border-radius: $global-border-radius;
+    border: {
+
+      color: $color-fieldset-bd;
+      radius: $global-border-radius;
+      style: solid;
+      width: 1px;
+    }
+
     padding: $global-spacing-unit;
 
     + * {
@@ -39,9 +44,14 @@
 
     legend {
       background-color: $global-background-color;
-      border: 1px solid;
-      border-color: $color-fieldset-bd;
-      border-radius: $global-border-radius;
+      border: {
+
+        color: $color-fieldset-bd;
+        radius: $global-border-radius;
+        style: solid;
+        width: 1px;
+      }
+
       padding: $global-spacing-unit-sm $global-spacing-unit;
     }
   }
@@ -62,8 +72,11 @@
 
       &[type='checkbox'],
       &[type='radio'] {
-        margin-right: $global-spacing-unit-sm;
-        margin-top: $global-spacing-unit-xs;
+        margin: {
+
+          right: $global-spacing-unit-sm;
+          top: $global-spacing-unit-xs;
+        }
 
         &:focus {
           border-color: $input-bd-focus;
@@ -111,8 +124,11 @@
 
     &[type='color'] {
       background-color: $color-white;
-      min-height: 44px;
-      min-width: 66px;
+      min: {
+
+        height: 44px;
+        width: 66px;
+      }
 
       &::-webkit-color-swatch { // sass-lint:disable-line no-vendor-prefixes
         border-radius: $global-border-radius;
@@ -151,18 +167,25 @@
     // sass-lint:disable-block no-vendor-prefixes
 
     @include input-pattern;
-    background-color: $color-white;
-    background-image: url('data:image/svg+xml;utf8,%3Csvg width="10" height="3" viewBox="0 0 10 3" xmlns="http://www.w3.org/2000/svg"%3E%3Ctitle%3E⌄%3C/title%3E%3Cpath fill="%23CBCBCB" d="M9.234 0L4.617 3 0 0h1.788l2.83 1.814L7.445 0" fill-rule="evenodd"/%3E%3C/svg%3E');
-    background-position: top $global-spacing-unit * 1.25 right $global-spacing-unit;
-    background-repeat: no-repeat;
-    background-size: 10px 3px;
+    background: {
+
+      color: $color-white;
+      image: url('data:image/svg+xml;utf8,%3Csvg width="10" height="3" viewBox="0 0 10 3" xmlns="http://www.w3.org/2000/svg"%3E%3Ctitle%3E⌄%3C/title%3E%3Cpath fill="%23CBCBCB" d="M9.234 0L4.617 3 0 0h1.788l2.83 1.814L7.445 0" fill-rule="evenodd"/%3E%3C/svg%3E');
+      position: top $global-spacing-unit * 1.25 right $global-spacing-unit;
+      repeat: no-repeat;
+      size: 10px 3px;
+    }
 
     //
     // Removes firefox select styles & arrow
     //
 
-    text-indent: .01px;
-    text-overflow: '';
+    text: {
+
+      indent: .01px;
+      overflow: '';
+    }
+
 
     //
     // Removes firefox dotted outline focusing

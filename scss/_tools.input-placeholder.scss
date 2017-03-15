@@ -1,0 +1,10 @@
+// TOOLS - Input placeholder
+
+@mixin input-placeholder {
+  // sass-lint:disable-block no-vendor-prefixes
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}

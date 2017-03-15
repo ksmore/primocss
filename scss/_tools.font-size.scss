@@ -16,6 +16,9 @@
 @mixin font-size($size) {
   // sass-lint:disable-block no-duplicate-properties
 
-  font-size: $size;
-  font-size: calculate-rem($size);
+  font: {
+
+    size: $size;
+    size: calculate-rem($size);
+  }
 }

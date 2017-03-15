@@ -8,7 +8,10 @@
 @import 'tools.font-size';
 @import 'tools.font-heading';
 @import 'tools.input-pattern';
+@import 'tools.input-placeholder';
 @import 'tools.opacity';
+@import 'tools.pseudo';
+@import 'tools.responsive-ratio';
 
 
 @import 'generic.reset';
@@ -31,3 +34,8 @@
 @import 'layout.containers';
 @import 'layout.grid';
 @import 'layout.spacing';
+
+
+@import 'utility.float';
+@import 'utility.text-align';
+@import 'utility.widths';

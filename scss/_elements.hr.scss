@@ -10,7 +10,10 @@
 
 
   hr {
-    border: 0;
-    border-top: 1px dashed $color-hr-border;
+    border: {
+
+      width: 0;
+      top: 1px dashed $color-hr-border;
+    }
   }
 }
