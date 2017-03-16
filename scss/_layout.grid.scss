@@ -63,10 +63,6 @@
         @include set-breakpoint-max(md) {
           flex-basis: calc(100% - #{$grid-gutters} / 2);
           max-width: calc(100% - #{$grid-gutters} / 2);
-
-          + * {
-            margin-top: $grid-gutters;
-          }
         }
       } // endif
 
@@ -83,6 +79,12 @@
         &.grid-col-#{$grid-col} {
           flex-basis: calc(#{$grid-width} - #{$grid-gutters});
           max-width: calc(#{$grid-width} - #{$grid-gutters});
+
+          @if $grid-col == 12 {
+            + * {
+              margin-top: $grid-gutters;
+            }
+          }
 
           &--no-gutter {
             flex-basis: $grid-width;
