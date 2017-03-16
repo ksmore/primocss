@@ -1,0 +1,132 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.10.10
+3 info using node@v6.9.5
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/richardmccartney/Sites/github-projects/primocss',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/richardmccartney/.npm/primocss/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/richardmccartney/.npm correctMkdir not in flight; initializing
+10 info lifecycle primocss@1.0.0~prepublish: primocss@1.0.0
+11 silly lifecycle primocss@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/richardmccartney/.npm/primocss/1.0.0/package.tgz',
+12 verbose tar pack   '/Users/richardmccartney/Sites/github-projects/primocss' ]
+13 verbose tarball /Users/richardmccartney/.npm/primocss/1.0.0/package.tgz
+14 verbose folder /Users/richardmccartney/Sites/github-projects/primocss
+15 verbose addLocalTarball adding from inside cache /Users/richardmccartney/.npm/primocss/1.0.0/package.tgz
+16 verbose correctMkdir /Users/richardmccartney/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd primocss@1.0.0
+18 verbose afterAdd /Users/richardmccartney/.npm/primocss/1.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/richardmccartney/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/richardmccartney/.npm/primocss/1.0.0/package/package.json written
+21 silly publish { name: 'primocss',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: 'Primo CSS Framework, a light weight mobile friendly SCSS framework for web & UI development.',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/primocss/primocss.git' },
+21 silly publish   keywords:
+21 silly publish    [ 'scss',
+21 silly publish      'framework',
+21 silly publish      'front-end',
+21 silly publish      'ui',
+21 silly publish      'css',
+21 silly publish      'html',
+21 silly publish      'pattern',
+21 silly publish      'library',
+21 silly publish      'frontend',
+21 silly publish      'style',
+21 silly publish      'guide',
+21 silly publish      'mixin',
+21 silly publish      'module',
+21 silly publish      'ITCSS' ],
+21 silly publish   author:
+21 silly publish    { name: 'Richard McCartney',
+21 silly publish      email: 'richard@mccartney.io',
+21 silly publish      url: 'http://mccartney.io/' },
+21 silly publish   license: 'MIT',
+21 silly publish   bugs: { url: 'https://github.com/primocss/primocss/issues' },
+21 silly publish   homepage: 'https://github.com/primocss/primocss#readme',
+21 silly publish   devDependencies:
+21 silly publish    { gulp: '^3.9.1',
+21 silly publish      'gulp-autoprefixer': '3.1.1',
+21 silly publish      'gulp-cssnano': '^2.1.2',
+21 silly publish      'gulp-rename': '1.2.2',
+21 silly publish      'gulp-sass': '3.1.0',
+21 silly publish      'gulp-sass-lint': '1.3.2',
+21 silly publish      'gulp-sourcemaps': '^2.3.1' },
+21 silly publish   readme: '# Primo CSS Framework\n\n[![Build Status](https://travis-ci.org/primocss/primocss.svg?branch=develop)](https://travis-ci.org/primocss/primocss)\n[![npm version](https://badge.fury.io/js/primocss.svg)](http://badge.fury.io/js/primocss)\n[![Downloads](http://img.shields.io/npm/dm/primocss.svg)](https://www.npmjs.com/package/primocss)\n[![devDependency Status](https://david-dm.org/primocss/primocss/dev-status.svg)](https://david-dm.org/primocss/primocss#info=devDependencies)\n\n*Primo CSS Framework, a light weight and mobile friendly CSS framework for web & UI development.*\n\nPrimo is a framework which provides the prime starting blocks for any front-end requirements. Without supplying out of the box solutions or mantras to follow, it creates a solid architecture footing to complete any project.\n\n<!-- ## Hotlink\n\nIf you just need to include the latest compiled version of the Primo CSS Framework, use our hosted version and fonts to kick start you project.\n\n``` html\n< link to go here >\n``` -->\n\n## Installation\n\nPrimo CSS can be installed to any project using a package manager\n\n*npm:*\n\n``` bash\nnpm install primocss\n```\n\n*Yarn:*\n\n``` bash\nyarn add primocss\n```\n\n<!-- ## Getting started\n\n< Getting started write up to go here >\n\n### Structure of the framework\n\n< Structure of the framework write up to go here >\n\n### How to modify Primo CSS\n\n< How to modify Primo CSS write up to go here >\n\n### Extending and namespaces\n\n< Extending and namespaces write up to go here > -->\n\n## Contribute\n\nCode licensed [MIT](https://github.com/primocss/primocss/blob/develop/LICENSE.md) by [Richard McCartney](http://www.github/richmccartney/)\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '28bd0d7139832dc52a3ab03e728857c33b2c9430',
+21 silly publish   _id: 'primocss@1.0.0',
+21 silly publish   _shasum: 'a8e0f8cf3f46947a21ecdca9f83df9ddf6454f89',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name primocss
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'primocss',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'primocss',
+26 silly mapToRegistry   name: 'primocss',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/primocss
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/richardmccartney/.npm/primocss/1.0.0/package.tgz
+30 verbose request uri https://registry.npmjs.org/primocss
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 1:18:53 PM
+33 verbose request using bearer token for auth
+34 verbose request id 608b5d0e21bd50a1
+35 http request PUT https://registry.npmjs.org/primocss
+36 http 403 https://registry.npmjs.org/primocss
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Thu, 16 Mar 2017 13:18:54 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-lcy1127-LCY',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1489670332.882510,VS0,VE1232',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /Users/richardmccartney/.npm/registry.npmjs.org/primocss on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 1.0.0." : primocss
+40 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+40 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+40 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:969:12)
+41 verbose statusCode 403
+42 verbose pkgid primocss
+43 verbose cwd /Users/richardmccartney/Sites/github-projects/primocss
+44 error Darwin 16.4.0
+45 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+46 error node v6.9.5
+47 error npm  v3.10.10
+48 error code E403
+49 error "You cannot publish over the previously published version 1.0.0." : primocss
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
