@@ -1,5 +1,3 @@
-<img src="https://raw.githubusercontent.com/primocss/logos/master/primocss-roundle.png" width="100" alt="Primo CSS Logo">
-
 # Primo CSS Framework
 
 [![Build Status](https://travis-ci.org/primocss/primocss.svg?branch=develop)](https://travis-ci.org/primocss/primocss)
