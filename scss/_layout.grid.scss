@@ -138,6 +138,18 @@
         &.offset-col-#{$offset-col} {
           margin-left: calc(#{$offset-width} + #{$grid-gutters} / 2);
         }
+
+        @each $breakpoint in map-keys($global-breakpoints) {
+          @if $global-responsive == true {
+            @include set-breakpoint-min($breakpoint) {
+              $prefix: breakpoint-min-prefix($breakpoint, $global-breakpoints);
+
+              &.offset#{$prefix}-col-#{$offset-col} {
+                margin-left: calc(#{$offset-width} + #{$grid-gutters} / 2);
+              }
+            }
+          }
+        }
       }
     }
 
