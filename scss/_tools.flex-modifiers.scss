@@ -1,0 +1,51 @@
+// TOOLS - Flex modifiers
+
+@mixin flex-modifiers {
+  
+  //
+  // Flex alignment modifiers. Start, center and end all flex items hotizontally
+  // regardless of width.
+  //
+
+  &--start {
+    -ms-flex-pack: start;
+    -webkit-box-pack: start;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &--center {
+    -ms-flex-pack: center;
+    -webkit-box-pack: start;
+    display: flex;
+    justify-content: center;
+  }
+
+  &--end {
+    -ms-flex-pack: end;
+    -webkit-box-pack: start;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &--top {
+    -ms-flex-align: start;
+    -webkit-box-align: start;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &--middle {
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    display: flex;
+    align-items: center;
+  }
+
+  &--bottom {
+    -ms-flex-align: end;
+    -webkit-box-align: end;
+    display: flex;
+    align-items: flex-end;
+  }
+}

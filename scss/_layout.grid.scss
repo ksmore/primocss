@@ -17,6 +17,8 @@
   //
 
   .grid-row {
+    @include flex-modifiers;
+
     // sass-lint:disable-block no-vendor-prefixes, no-misspelled-properties
     -webkit-box-direction: normal;
     -webkit-box-orient: horizontal;
@@ -42,8 +44,8 @@
     > * {
       flex: {
         basis: auto;
-        grow: 0;
-        shrink: 1;
+        grow: 1;
+        shrink: 0;
       }
 
       margin: {
@@ -179,47 +181,6 @@
 
     &--full-height {
       height: 100%;
-    }
-
-    //
-    // Alignment classes. Start, center and end all flex items hotizontally
-    // regardless of width.
-    //
-
-    &--start {
-      -ms-flex-pack: start;
-      -webkit-box-pack: start;
-      justify-content: flex-start;
-    }
-
-    &--center {
-      -ms-flex-pack: center;
-      -webkit-box-pack: start;
-      justify-content: center;
-    }
-
-    &--end {
-      -ms-flex-pack: end;
-      -webkit-box-pack: start;
-      justify-content: flex-end;
-    }
-
-    &--top {
-      -ms-flex-align: start;
-      -webkit-box-align: start;
-      align-items: flex-start;
-    }
-
-    &--middle {
-      -ms-flex-align: center;
-      -webkit-box-align: center;
-      align-items: center;
-    }
-
-    &--bottom {
-      -ms-flex-align: end;
-      -webkit-box-align: end;
-      align-items: flex-end;
     }
   }
 } // endif

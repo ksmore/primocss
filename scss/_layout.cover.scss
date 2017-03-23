@@ -14,6 +14,7 @@
   //
 
   .cover {
+    @include flex-modifiers;
     min-height: $cover-height;
 
     &--half {
@@ -22,18 +23,6 @@
 
     &--third {
       min-height: calc(#{$cover-height} / 3);
-    }
-
-    //
-    // Aligns content of the container vertically center.
-    //
-
-    &--middle {
-      // sass-lint:disable-block no-vendor-prefixes, no-misspelled-properties
-      -ms-flex-align: center;
-      -webkit-box-align: center;
-      align-items: center;
-      display: flex;
     }
   }
 }
