@@ -14,8 +14,7 @@ Primo is a framework which provides the prime starting blocks for any front-end 
 If you just need to include the latest compiled version of the PrimoCSS Framework, use our hosted version and fonts to begin your project.
 
 ``` html
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-<link href="http://primocss.com/build/css/primocss-1.0.0.min.css" rel="stylesheet" media="screen" type="text/css">
+<link href="http://primocss.com/build/css/primocss.min.css" rel="stylesheet" media="screen" type="text/css">
 ```
 
 ## Package manager installation
