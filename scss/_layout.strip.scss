@@ -8,12 +8,13 @@
   .strip {
     border-top: 1px dotted $color-grey-light;
     margin-top: 0;
-    width: 100%;
 
     padding: {
       bottom: $global-spacing-unit-xl;
       top: $global-spacing-unit-xl;
     }
+
+    width: 100%;
 
     @if $global-responsive == true {
       @include set-breakpoint-max(md) {
@@ -30,44 +31,6 @@
 
     &:first-child {
       border-top: 0;
-    }
-
-    //
-    // Sets container colors and link colors.
-    //
-
-    @each $name, $color in $strip-colors {
-
-      //
-      // If set to true, set link styles to light.
-      //
-
-      @if nth($color, 2) == true {
-        &--#{$name} {
-          @include strip-color(
-            $strip-bg-color: nth($color, 1),
-            $strip-color: $color-white,
-            $strip-hover: $color-grey-light,
-            $strip-active: $color-grey-dark,
-            $strip-visited: $color-grey-dark
-          );
-        }
-
-        //
-        // All other strip link styles set to dark.
-        //
-
-      } @else {
-        &--#{$name} {
-          @include strip-color(
-            $strip-bg-color: nth($color, 1),
-            $strip-color: $color-grey-darker,
-            $strip-hover: $color-grey-darkest,
-            $strip-active: $color-navy,
-            $strip-visited: $color-navy
-          );
-        }
-      } // endif
     }
   }
 } // endif

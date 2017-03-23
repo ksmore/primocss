@@ -20,7 +20,7 @@
   }
 
   mark {
-    background-color: lighten($color-yellow, 10%);
+    background-color: $color-yellow-light;
     border-radius: $global-border-radius;
     padding: $global-spacing-unit-xs;
   }

@@ -35,7 +35,7 @@ $global-line-height:          24px !default;
 //  Global font-family
 //
 
-$global-font-family:          'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif !default;
+$global-font-family:          'Helvetica Neue', Helvetica, sans-serif !default;
 $global-mono-font-family:     Consolas, monaco, monospace !default;
 
 //
@@ -130,13 +130,11 @@ $use-element-quotes:          true !default;
 $use-element-table:           true !default;
 
 
-
 $use-layout-spacing:          true !default;
 $use-layout-containers:       true !default;
 $use-layout-grids:            true !default;
 $use-layout-strip:            true !default;
 $use-layout-cover:            true !default;
-
 
 
 $use-utility-float:           true !default;
