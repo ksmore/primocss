@@ -12,12 +12,10 @@
   $underline: true
 ) {
 
-  &:link {
-    color: $color;
+  color: $color;
 
-    @if $underline == true {
-      text-decoration: underline;
-    }
+  @if $underline == true {
+    text-decoration: underline;
   }
 
   &:visited {
