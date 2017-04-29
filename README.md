@@ -19,7 +19,7 @@ If you just need to include the latest compiled version of the PrimoCSS Framewor
 
 ## Package manager installation
 
-PrimoCSS can be installed to any project using a package manager. Pull down the latest version of the framework into your local ```node_modules``` folder and save it to your project's dependencies (```package.json```) as follows:
+PrimoCSS can be installed to any project using different package managers. To pull down the latest release use the following commands with NPM, Yarn or Bower;
 
 *npm:*
 
@@ -31,6 +31,12 @@ npm install primocss --save-dev
 
 ``` bash
 yarn add primocss
+```
+
+*Bower:*
+
+```bash
+bower install primocss --save-dev
 ```
 
 ## Local development
