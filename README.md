@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/primocss/primocss.svg?branch=develop)](https://travis-ci.org/primocss/primocss)
 [![npm version](https://badge.fury.io/js/primocss.svg)](http://badge.fury.io/js/primocss)
 [![Downloads](http://img.shields.io/npm/dm/primocss.svg)](https://www.npmjs.com/package/primocss)
+[![Bower version](https://badge.fury.io/bo/primocss.svg)](https://badge.fury.io/bo/primocss)
 [![devDependency Status](https://david-dm.org/primocss/primocss/dev-status.svg)](https://david-dm.org/primocss/primocss#info=devDependencies)
 
 *PrimoCSS Framework, a light weight and mobile friendly CSS framework for web & UI development.*
