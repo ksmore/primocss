@@ -156,9 +156,9 @@
       // Removes margin-top to keep button elements inline
       //
 
-      + &[type='button'],
-      + &[type='reset'],
-      + &[type='submit'] {
+      + [type='button'],
+      + [type='reset'],
+      + [type='submit'] {
         margin-top: 0;
       }
 
