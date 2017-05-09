@@ -151,6 +151,30 @@
     &[type='reset'],
     &[type='submit'] {
       @include button-pattern;
+
+      //
+      // Removes margin-top to keep button elements inline
+      //
+
+      + &[type='button'],
+      + &[type='reset'],
+      + &[type='submit'] {
+        margin-top: 0;
+      }
+
+      //
+      // Sets spacing for medium and small breakpoint if responsive is true
+      //
+
+      @if $global-responsive == true {
+        @include set-breakpoint-max(sm) {
+          margin-top: $global-spacing-unit-xs;
+        }
+
+        @include set-breakpoint-max(md) {
+          margin-top: $global-spacing-unit-sm;
+        }
+      } // endif
     }
   }
 
@@ -205,5 +229,23 @@
 
   button {
     @include button-pattern;
+
+    + button {
+      margin-top: 0;
+    }
+
+    //
+    // Sets spacing for medium and small breakpoint if responsive is true
+    //
+
+    @if $global-responsive == true {
+      @include set-breakpoint-max(sm) {
+        margin-top: $global-spacing-unit-xs;
+      }
+
+      @include set-breakpoint-max(md) {
+        margin-top: $global-spacing-unit-sm;
+      }
+    } // endif
   }
 }
