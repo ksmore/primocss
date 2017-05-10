@@ -58,6 +58,7 @@
   label {
     @include clearfix;
     cursor: pointer;
+    display: inherit;
 
     + * {
       margin-top: $global-spacing-unit-xs; // [1] //
@@ -156,25 +157,26 @@
       // Removes margin-top to keep button elements inline
       //
 
+      + button,
       + [type='button'],
       + [type='reset'],
       + [type='submit'] {
         margin-top: 0;
+
+        //
+        // Sets spacing for medium and small breakpoint if responsive is true
+        //
+
+        @if $global-responsive == true {
+          @include set-breakpoint-max(sm) {
+            margin-top: $global-spacing-unit-xs;
+          }
+
+          @include set-breakpoint-max(md) {
+            margin-top: $global-spacing-unit-sm;
+          }
+        } // endif
       }
-
-      //
-      // Sets spacing for medium and small breakpoint if responsive is true
-      //
-
-      @if $global-responsive == true {
-        @include set-breakpoint-max(sm) {
-          margin-top: $global-spacing-unit-xs;
-        }
-
-        @include set-breakpoint-max(md) {
-          margin-top: $global-spacing-unit-sm;
-        }
-      } // endif
     }
   }
 
@@ -230,22 +232,25 @@
   button {
     @include button-pattern;
 
-    + button {
+    + button,
+    + [type='button'],
+    + [type='reset'],
+    + [type='submit'] {
       margin-top: 0;
+
+      //
+      // Sets spacing for medium and small breakpoint if responsive is true
+      //
+
+      @if $global-responsive == true {
+        @include set-breakpoint-max(sm) {
+          margin-top: $global-spacing-unit-xs;
+        }
+
+        @include set-breakpoint-max(md) {
+          margin-top: $global-spacing-unit-sm;
+        }
+      } // endif
     }
-
-    //
-    // Sets spacing for medium and small breakpoint if responsive is true
-    //
-
-    @if $global-responsive == true {
-      @include set-breakpoint-max(sm) {
-        margin-top: $global-spacing-unit-xs;
-      }
-
-      @include set-breakpoint-max(md) {
-        margin-top: $global-spacing-unit-sm;
-      }
-    } // endif
   }
 }
