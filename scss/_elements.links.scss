@@ -5,7 +5,7 @@
   // Hyperlink colors
   //
 
-  $color-link:                   inherit !default;
+  $color-link:                   $color-blue-dark !default;
   $color-link-visited:           $color-blue-dark !default;
   $color-link-hover:             $color-blue-light !default;
   $color-link-active:            $color-blue !default;
@@ -14,7 +14,7 @@
 
   a {
     @include link-style(
-      $color: $color-link;
+      $color: $color-link,
       $hover: $color-link-hover,
       $active: $color-link-active,
       $visited: $color-link-visited
