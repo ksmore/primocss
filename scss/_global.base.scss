@@ -22,19 +22,19 @@
 html {
   // sass-lint:disable-block no-vendor-prefixes
 
-  @include font-size($global-font-size); // [1 //
+  @include font-size($global-font-size); // [1] //
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   background-color: $global-background-color; // [5] //
-  color: $global-color; // [1 //
+  color: $global-color; // [1] //
 
   font: {
-    family: $global-font-family; // [1 //
-    weight: $global-font-weight; // [1 //
+    family: $global-font-family; // [1] //
+    weight: $global-font-weight; // [1] //
   }
 
   height: 100%; // [2] //
-  line-height: $global-line-height / $global-font-size; // [1 //
+  line-height: $global-line-height / $global-font-size; // [1] //
   min-height: 100%; // [2] //
   overflow: {
     x: hidden; // [3] //
