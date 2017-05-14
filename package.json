@@ -1,6 +1,6 @@
 {
   "name": "primocss",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "PrimoCSS framework, a light weight mobile friendly SCSS / CSS framework for web & UI development",
   "main": "index.js",
   "scripts": {
