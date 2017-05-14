@@ -1,7 +1,7 @@
 {
   "name": "primocss",
-  "version": "1.0.10",
-  "description": "PrimoCSS, a simple and mobile friendly HTML, CSS and SCSS framework for web and UI developments.",
+  "version": "1.0.11",
+  "description": "PrimoCSS framework, a light weight mobile friendly SCSS / CSS framework for web & UI development",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
