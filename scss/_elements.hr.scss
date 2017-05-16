@@ -11,9 +11,7 @@
 
   hr {
     border: {
-
-      top: 1px dashed $color-hr-border;
-      width: 0;
+      top: 1px dotted $color-hr-border;
     }
   }
 }

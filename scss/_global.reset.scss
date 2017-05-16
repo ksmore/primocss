@@ -27,6 +27,15 @@ legend {
 
 
 //
+//  Removes all borders from horizontal rule.
+//
+
+hr {
+  border: 0;
+}
+
+
+//
 //  Remove trailing margins from nested lists.
 //
 
