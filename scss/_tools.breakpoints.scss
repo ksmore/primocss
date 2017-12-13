@@ -31,16 +31,3 @@
     + 'Please make sure it is defined in `$breakpoints` map.';
   }
 }
-
-//
-// Returns a blank string if its the smallest of breakpoints, used to create
-// breakpoint related ultility classes.
-//
-
-@function breakpoint-min-prefix($name, $breakpoints: $global-breakpoints) {
-  @return if(breakpoint-min($name, $breakpoints) == null, '', '-#{$name}');
-}
-
-@function breakpoint-max-prefix($name, $breakpoints: $global-breakpoints) {
-  @return if(breakpoint-max($name, $breakpoints) == null, '', '-#{$name}');
-}

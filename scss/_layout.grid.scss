@@ -104,9 +104,7 @@
             $grid-width: $grid-column-value * $grid-col;
 
             @include set-breakpoint-min($breakpoint) {
-              $prefix: breakpoint-min-prefix($breakpoint, $global-breakpoints);
-
-              &.grid#{$prefix}-col-#{$grid-col} {
+              &.grid-#{$breakpoint}-col-#{$grid-col} {
                 flex-basis: calc(#{$grid-width} - #{$grid-gutters});
                 margin-top: 0;
                 max-width: calc(#{$grid-width} - #{$grid-gutters});
@@ -144,9 +142,7 @@
         @each $breakpoint in map-keys($global-breakpoints) {
           @if $global-responsive == true {
             @include set-breakpoint-min($breakpoint) {
-              $prefix: breakpoint-min-prefix($breakpoint, $global-breakpoints);
-
-              &.offset#{$prefix}-col-#{$offset-col} {
+              &.offset-#{$breakpoint}-col-#{$offset-col} {
                 margin-left: calc(#{$offset-width} + #{$grid-gutters} / 2);
               }
             }
