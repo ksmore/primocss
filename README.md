@@ -5,6 +5,7 @@
 [![Downloads](http://img.shields.io/npm/dm/primocss.svg)](https://www.npmjs.com/package/primocss)
 [![Bower version](https://badge.fury.io/bo/primocss.svg)](https://badge.fury.io/bo/primocss)
 [![devDependency Status](https://david-dm.org/primocss/primocss/dev-status.svg)](https://david-dm.org/primocss/primocss#info=devDependencies)
+[![Open Source Helpers](https://www.codetriage.com/primocss/primocss/badges/users.svg)](https://www.codetriage.com/primocss/primocss)
 
 *PrimoCSS Framework, a light weight and mobile friendly SCSS / CSS framework for web & UI development.*
 
